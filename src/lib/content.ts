@@ -221,39 +221,73 @@ export const processSteps: ProcessStep[] = [
 
 export type Testimonial = {
   name: string;
-  role: string;
+  location: string;
+  stayType: string;
   quote: string;
+  highlight?: string;
   rating: number;
 };
 
 export const testimonials: Testimonial[] = [
   {
     name: "Camille Laurent",
-    role: "Hôte Airbnb · Le Marais",
+    location: "Le Marais, Paris",
+    stayType: "Location courte durée",
     quote:
-      "Rotations impeccables et toujours dans les temps. Mes voyageurs notent systématiquement la propreté 5 étoiles. Atria est devenu indispensable.",
+      "L'appartement est magnifique, impeccablement propre et parfaitement préparé à chaque arrivée. Confortable et accueillant dès l'entrée dans les lieux. Mes voyageurs notent systématiquement la propreté 5 étoiles.",
+    highlight: "impeccablement propre",
     rating: 5,
   },
   {
     name: "Julien Mercier",
-    role: "Property Manager · 40 logements",
+    location: "Property Manager · Paris 11e",
+    stayType: "40 logements gérés",
     quote:
-      "Une équipe fiable et un interlocuteur unique. La gestion de mes logements est enfin sereine, avec une qualité constante à chaque passage.",
+      "Une équipe fiable, un interlocuteur unique. La gestion de mes rotations est enfin sereine — qualité constante, ponctualité irréprochable, logements toujours prêts pour le prochain séjour.",
+    highlight: "qualité constante",
     rating: 5,
   },
   {
     name: "Sophie Nguyen",
-    role: "Directrice · Agence immobilière",
+    location: "Agence immobilière · Paris 16e",
+    stayType: "Fins de chantier",
     quote:
-      "Fins de chantier livrées parfaitement propres, prêtes à présenter aux acquéreurs. Un vrai gain de temps et une image soignée.",
+      "Des espaces livrés parfaitement propres, prêts à présenter aux acquéreurs. Un vrai gain de temps et une image soignée qui reflète notre exigence.",
+    highlight: "parfaitement propres",
     rating: 5,
   },
   {
     name: "Marc Dubois",
-    role: "Responsable · Bureaux Paris 8e",
+    location: "Bureaux · Paris 8e",
+    stayType: "Entretien régulier",
     quote:
-      "Discrétion, ponctualité et résultat irréprochable. Nos espaces sont toujours accueillants pour nos collaborateurs et clients.",
+      "Discrétion, ponctualité et résultat irréprochable. Nos espaces sont toujours accueillants pour nos collaborateurs et nos clients.",
+    highlight: "résultat irréprochable",
     rating: 5,
+  },
+];
+
+export type TrustPillar = {
+  title: string;
+  items: string[];
+};
+
+export const trustPillars: TrustPillar[] = [
+  {
+    title: "Côté voyageur",
+    items: [
+      "Logement impeccable à chaque arrivée",
+      "Standards de propreté élevés",
+      "Séjour confortable dès l'entrée dans les lieux",
+    ],
+  },
+  {
+    title: "Côté propriétaire",
+    items: [
+      "Vérification du logement après chaque séjour",
+      "Gestion des éventuelles dégradations",
+      "Logement toujours prêt pour les prochaines réservations",
+    ],
   },
 ];
 

@@ -1,7 +1,7 @@
 import { Hero } from "@/components/home/Hero";
-import { WhyAtria } from "@/components/home/WhyAtria";
 import { Services } from "@/components/home/Services";
 import { AirbnbTurnover } from "@/components/home/AirbnbTurnover";
+import { TrustAtria } from "@/components/home/TrustAtria";
 import { Process } from "@/components/home/Process";
 import { About } from "@/components/home/About";
 import { Stats } from "@/components/home/Stats";
@@ -16,9 +16,9 @@ export default function HomePage() {
     <>
       <FaqSchema />
       <Hero />
-      <WhyAtria />
       <Services />
       <AirbnbTurnover />
+      <TrustAtria />
       <Process />
       <About />
       <Stats />
