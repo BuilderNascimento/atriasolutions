@@ -167,9 +167,9 @@ export function AirbnbTurnover() {
     <section id="airbnb" className="relative bg-white py-24 lg:py-32">
       <div className="container-x">
         <SectionHeading
-          eyebrow="Conciergerie Airbnb"
-          title="Propreté et gestion des départs des locations Airbnb à Paris"
-          description="Un accompagnement complet entre chaque séjour : vérification, ménage aux standards des plateformes, nettoyage approfondi et gestion des dégradations."
+          eyebrow="Protection locative"
+          title="Nous protégeons vos biens entre chaque séjour"
+          description="Vérification, entretien aux standards des plateformes, remise en état et gestion des dégradations — votre patrimoine locatif, toujours valorisé."
         />
 
         <Stagger
@@ -183,7 +183,7 @@ export function AirbnbTurnover() {
 
         <div className="mt-14 flex justify-center">
           <ButtonLink href="/devis" variant="accent">
-            Confier la gestion de mon Airbnb
+            Protéger mon bien locatif
           </ButtonLink>
         </div>
       </div>

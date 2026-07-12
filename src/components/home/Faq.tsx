@@ -18,8 +18,8 @@ export function Faq() {
             <SectionHeading
               align="left"
               eyebrow="Questions fréquentes"
-              title="Tout ce que vous devez savoir"
-              description="Vous ne trouvez pas votre réponse ? Notre équipe se tient à votre disposition."
+              title="Protéger son patrimoine, en toute sérénité"
+              description="Les réponses aux questions que se posent les propriétaires qui nous confient leurs biens."
             />
             <div className="mt-8 hidden lg:block">
               <ButtonLink href="/contact" variant="primary">

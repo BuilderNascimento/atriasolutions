@@ -9,7 +9,7 @@ import { siteConfig } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Contactez Atria Solutions pour vos besoins de nettoyage à Paris et en Île-de-France. Téléphone, e-mail, WhatsApp ou formulaire — réponse rapide garantie.",
+    "Contactez Atria Solutions pour protéger votre patrimoine à Paris. Téléphone, e-mail, WhatsApp ou formulaire — réponse rapide garantie.",
   alternates: { canonical: "/contact" },
 };
 
@@ -37,8 +37,8 @@ export default function ContactPage() {
       />
       <PageHeader
         eyebrow="Contact"
-        title="Nous sommes à votre écoute"
-        description="Une question, un projet, une demande urgente ? Contactez-nous par le canal de votre choix."
+        title="Protégeons ensemble votre patrimoine"
+        description="Parlez-nous de votre bien. Notre équipe vous répond rapidement par le canal de votre choix."
         breadcrumbs={[
           { name: "Accueil", href: "/" },
           { name: "Contact", href: "/contact" },

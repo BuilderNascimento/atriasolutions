@@ -38,6 +38,15 @@ export const siteConfig = {
     apartments: 200,
     projects: 350,
   },
+  brand: {
+    promise: "Nous protégeons votre patrimoine.",
+    manifestoLine1: "Nous ne nettoyons pas.",
+    manifestoLine2: "Nous protégeons votre patrimoine.",
+    valueProposition:
+      "Votre bien immobilier représente un investissement précieux. Nous préservons sa valeur, sa réputation et votre tranquillité.",
+    ctaPrimary: "Protéger mon bien",
+    ctaSecondary: "Nous contacter",
+  },
 } as const;
 
 export type SiteConfig = typeof siteConfig;

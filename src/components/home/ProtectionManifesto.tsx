@@ -1,6 +1,7 @@
 "use client";
 
 import { Reveal } from "@/components/ui/Reveal";
+import { siteConfig } from "@/lib/site";
 
 export function ProtectionManifesto() {
   return (
@@ -12,18 +13,17 @@ export function ProtectionManifesto() {
             Notre promesse
           </span>
           <blockquote className="font-heading text-3xl font-bold leading-[1.12] text-balance sm:text-4xl lg:text-5xl">
-            Nous ne nettoyons pas.
+            {siteConfig.brand.manifestoLine1}
             <br />
-            <span className="text-secondary/90">Nous protégeons votre patrimoine.</span>
+            <span className="text-secondary/90">{siteConfig.brand.manifestoLine2}</span>
           </blockquote>
         </Reveal>
 
         <Reveal delay={0.12}>
           <p className="mt-8 max-w-2xl text-base leading-relaxed text-secondary/80 sm:text-lg">
-            Votre appartement parisien représente un investissement précieux.
-            Chaque intervention est pensée pour préserver sa valeur, sa
-            réputation et la tranquillité de ses propriétaires — bien au-delà
-            d&apos;un simple ménage.
+            {siteConfig.brand.valueProposition} Chaque intervention est pensée
+            pour préserver la valeur, la réputation et la tranquillité de vos
+            propriétaires — bien au-delà d&apos;un simple ménage.
           </p>
         </Reveal>
 

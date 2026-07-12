@@ -79,7 +79,7 @@ export function Hero() {
             className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center"
           >
             <ButtonLink href="/devis" variant="accent">
-              Demander un devis
+              {siteConfig.brand.ctaPrimary}
               <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" strokeWidth={2} />
             </ButtonLink>
             <ButtonLink
@@ -87,7 +87,7 @@ export function Hero() {
               variant="secondary"
               className="!bg-white/10 !text-white !ring-white/25 backdrop-blur-sm hover:!bg-white/20"
             >
-              Nous contacter
+              {siteConfig.brand.ctaSecondary}
             </ButtonLink>
           </motion.div>
 
@@ -103,7 +103,7 @@ export function Hero() {
                   <Star key={i} className="h-4 w-4 fill-current" />
                 ))}
               </span>
-              <span>+{siteConfig.stats.clients} clients satisfaits</span>
+              <span>+{siteConfig.stats.clients} propriétaires qui nous font confiance</span>
             </span>
             <span className="inline-flex items-center gap-2">
               <Gem className="h-4.5 w-4.5 text-accent-400" strokeWidth={1.75} />

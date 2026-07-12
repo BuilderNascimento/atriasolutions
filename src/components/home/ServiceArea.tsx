@@ -16,7 +16,7 @@ export function ServiceArea() {
               align="left"
               eyebrow="Zone d'intervention"
               title="Paris & toute l'Île-de-France"
-              description="Nous intervenons dans Paris intra-muros et dans l'ensemble des départements d'Île-de-France, au plus près de vos besoins."
+              description="Nous protégeons les patrimoines immobiliers à Paris et dans toute l'Île-de-France — au plus près de vos biens."
             />
 
             <div className="mt-8 flex flex-wrap gap-2.5">
@@ -38,7 +38,7 @@ export function ServiceArea() {
 
             <div className="mt-10">
               <ButtonLink href="/devis" variant="accent">
-                Vérifier ma disponibilité
+                Protéger mon bien
               </ButtonLink>
             </div>
           </div>

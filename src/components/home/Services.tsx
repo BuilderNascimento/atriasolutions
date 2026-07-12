@@ -16,9 +16,9 @@ export function Services() {
         <div className="flex flex-col items-start justify-between gap-8 lg:flex-row lg:items-end">
           <SectionHeading
             align="left"
-            eyebrow="Nos services"
-            title="Une prestation pour chaque espace"
-            description="Des solutions de nettoyage sur mesure, pensées pour les professionnels comme pour les particuliers les plus exigeants."
+            eyebrow="Nos expertises"
+            title="Chaque bien mérite une protection sur mesure"
+            description="Nous adaptons notre protocole à chaque patrimoine — appartement, résidence, bureau ou local professionnel."
           />
           <ButtonLink href="/services" variant="primary" size="md" className="shrink-0">
             Tous les services

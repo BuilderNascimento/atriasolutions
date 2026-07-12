@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Clock, ShieldCheck, BadgeCheck, PhoneCall } from "lucide-react";
+import { Clock, ShieldCheck, Gem, PhoneCall } from "lucide-react";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Reveal } from "@/components/ui/Reveal";
 import { ContactForm } from "@/components/contact/ContactForm";
@@ -7,16 +7,28 @@ import { BreadcrumbSchema } from "@/components/seo/JsonLd";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Demander un devis",
+  title: "Protéger mon bien",
   description:
-    "Obtenez un devis gratuit et sans engagement pour vos prestations de nettoyage à Paris. Réponse rapide, tarifs clairs, qualité garantie.",
+    "Évaluez gratuitement la protection de votre patrimoine à Paris. Plan sur mesure, sans engagement, réponse sous 24 h ouvrées.",
   alternates: { canonical: "/devis" },
 };
 
 const reassurances = [
-  { icon: Clock, title: "Réponse rapide", text: "Une proposition claire sous 24 h ouvrées." },
-  { icon: BadgeCheck, title: "Sans engagement", text: "Un devis gratuit et transparent, sans surprise." },
-  { icon: ShieldCheck, title: "Société assurée", text: "Une prestation encadrée et sécurisée." },
+  {
+    icon: Clock,
+    title: "Réponse rapide",
+    text: "Un plan de protection clair sous 24 h ouvrées.",
+  },
+  {
+    icon: Gem,
+    title: "Sur mesure",
+    text: "Chaque bien est unique — notre proposition l'est aussi.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Sans engagement",
+    text: "Évaluation gratuite, transparente et sans surprise.",
+  },
 ];
 
 export default function DevisPage() {
@@ -29,9 +41,9 @@ export default function DevisPage() {
         ]}
       />
       <PageHeader
-        eyebrow="Devis gratuit"
-        title="Recevez votre devis personnalisé"
-        description="Décrivez votre besoin en quelques secondes. Nous vous proposons une solution adaptée et un tarif clair, rapidement."
+        eyebrow="Évaluation gratuite"
+        title="Protégeons votre patrimoine ensemble"
+        description="Décrivez votre bien en quelques secondes. Nous vous proposons un plan de protection adapté — clair, rapide, sans engagement."
         breadcrumbs={[
           { name: "Accueil", href: "/" },
           { name: "Devis", href: "/devis" },
@@ -43,11 +55,12 @@ export default function DevisPage() {
           <div className="lg:col-span-5">
             <Reveal>
               <h2 className="text-2xl font-bold text-primary sm:text-3xl">
-                Pourquoi demander un devis&nbsp;?
+                Pourquoi faire évaluer votre bien&nbsp;?
               </h2>
               <p className="mt-4 leading-relaxed text-muted">
-                Chaque projet est unique. Un devis nous permet de vous proposer
-                la prestation la plus adaptée à vos besoins et à votre budget.
+                Un appartement parisien représente un investissement considérable.
+                Une évaluation nous permet de comprendre comment mieux protéger
+                sa valeur, sa réputation et votre tranquillité.
               </p>
             </Reveal>
 
@@ -56,8 +69,8 @@ export default function DevisPage() {
                 const Icon = r.icon;
                 return (
                   <Reveal key={r.title} delay={i * 0.1}>
-                    <div className="flex items-start gap-4 rounded-2xl border border-secondary/70 bg-secondary-100/40 p-5">
-                      <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-accent/10 text-accent">
+                    <div className="flex items-start gap-4 rounded-sm border border-secondary/70 bg-secondary-100/40 p-5">
+                      <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-sm bg-accent/10 text-accent">
                         <Icon className="h-5 w-5" strokeWidth={1.6} />
                       </span>
                       <span>
@@ -73,7 +86,7 @@ export default function DevisPage() {
             <Reveal delay={0.2}>
               <a
                 href={siteConfig.contact.phoneHref}
-                className="mt-8 inline-flex items-center gap-3 rounded-2xl bg-primary p-5 text-white shadow-soft transition-transform hover:-translate-y-0.5"
+                className="mt-8 inline-flex items-center gap-3 rounded-sm bg-primary p-5 text-white shadow-soft transition-transform hover:-translate-y-0.5"
               >
                 <PhoneCall className="h-5 w-5 text-accent-400" strokeWidth={1.75} />
                 <span>
@@ -86,7 +99,7 @@ export default function DevisPage() {
 
           <div className="lg:col-span-7">
             <Reveal delay={0.1}>
-              <div className="rounded-2xl border border-secondary/70 bg-white p-6 shadow-card sm:p-8">
+              <div className="rounded-sm border border-secondary/70 bg-white p-6 shadow-card sm:p-8">
                 <ContactForm />
               </div>
             </Reveal>

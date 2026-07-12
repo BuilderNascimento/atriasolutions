@@ -54,9 +54,9 @@ export const services: Service[] = [
   {
     slug: "nettoyage-appartement",
     title: "Nettoyage d'appartement",
-    short: "Un intérieur impeccable, du sol au plafond.",
+    short: "La valeur de votre appartement, préservée à chaque passage.",
     description:
-      "Une prestation soignée pour votre appartement parisien : dépoussiérage, sols, cuisine, sanitaires et finitions détaillées. Un résultat irréprochable, à chaque passage.",
+      "Chaque intervention protège votre appartement parisien : matériaux nobles préservés, finitions impeccables, réputation entretenue. Bien plus qu'un ménage — une sauvegarde de votre patrimoine.",
     icon: Sparkles,
     image:
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1400&q=80",
@@ -70,9 +70,9 @@ export const services: Service[] = [
   {
     slug: "nettoyage-maison",
     title: "Nettoyage de maison",
-    short: "Grandes surfaces traitées avec la même exigence.",
+    short: "Votre résidence protégée, pièce après pièce.",
     description:
-      "Des maisons et hôtels particuliers pris en charge par une équipe dédiée. Nous adaptons notre protocole à chaque espace, matériau et surface pour un entretien haut de gamme.",
+      "Maisons et hôtels particuliers confiés à une équipe dédiée. Notre protocole préserve chaque surface, chaque matériau — pour que votre bien conserve sa valeur et son éclat.",
     icon: Home,
     image:
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1400&q=80",
@@ -86,9 +86,9 @@ export const services: Service[] = [
   {
     slug: "nettoyage-bureaux",
     title: "Nettoyage de bureaux",
-    short: "Des espaces de travail sains et représentatifs.",
+    short: "L'image de votre entreprise, protégée au quotidien.",
     description:
-      "Entretien professionnel de vos bureaux et espaces communs, en journée ou en horaires décalés. Discrétion, régularité et contrôle qualité pour une image irréprochable.",
+      "Vos bureaux reflètent votre standing. Nous protégeons cette image avec un entretien discret, régulier et irréprochable — pour que chaque visiteur perçoive le professionnalisme de votre marque.",
     icon: Building2,
     image:
       "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1400&q=80",
@@ -102,9 +102,9 @@ export const services: Service[] = [
   {
     slug: "nettoyage-fin-de-chantier",
     title: "Nettoyage de fin de chantier",
-    short: "La touche finale après vos travaux.",
+    short: "Votre bien livré dans un état irréprochable.",
     description:
-      "Élimination des poussières, résidus de plâtre, traces de peinture et gravats fins. Nous livrons des espaces prêts à être habités ou remis au client, sans la moindre trace.",
+      "Après vos travaux, nous restituons un espace prêt à valoriser votre patrimoine. Chaque détail compte pour la présentation à vos acquéreurs ou locataires.",
     icon: HardHat,
     image:
       "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1400&q=80",
@@ -118,9 +118,9 @@ export const services: Service[] = [
   {
     slug: "nettoyage-en-profondeur",
     title: "Nettoyage en profondeur",
-    short: "Une remise à neuf en profondeur, jusqu'aux détails.",
+    short: "Une remise en état qui préserve la valeur de votre bien.",
     description:
-      "Un grand nettoyage complet pour les zones les plus exigeantes : détartrage, dégraissage, désinfection et traitement des points habituellement oubliés.",
+      "Un entretien en profondeur pour les biens qui exigent une attention particulière. Nous protégeons vos surfaces les plus précieuses et prolongeons leur durée de vie.",
     icon: Waves,
     image:
       "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1400&q=80",
@@ -134,9 +134,9 @@ export const services: Service[] = [
   {
     slug: "nettoyage-recurrent",
     title: "Nettoyage récurrent",
-    short: "Un entretien régulier, sans y penser.",
+    short: "Votre patrimoine entretenu en continu, sans effort.",
     description:
-      "Des passages planifiés à la fréquence de votre choix. Idéal pour les rotations Airbnb, les résidences et les entreprises qui exigent une propreté constante.",
+      "Un suivi régulier pour que votre bien ne perde jamais de sa valeur. Idéal pour les rotations Airbnb, les résidences et les portefeuilles immobiliers exigeants.",
     icon: CalendarClock,
     image:
       "https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=1400&q=80",
@@ -203,33 +203,33 @@ export type ProcessStep = {
 export const processSteps: ProcessStep[] = [
   {
     number: "01",
-    title: "Contact",
+    title: "Évaluation",
     description:
-      "Vous nous décrivez votre besoin par téléphone, e-mail ou via le formulaire en ligne.",
+      "Vous nous confiez votre bien. Nous analysons vos besoins et évaluons comment mieux protéger votre patrimoine.",
   },
   {
     number: "02",
-    title: "Devis",
+    title: "Proposition",
     description:
-      "Nous établissons un devis clair et détaillé, sans surprise ni engagement.",
+      "Nous établissons un plan de protection sur mesure, clair et transparent, sans engagement.",
   },
   {
     number: "03",
     title: "Planification",
     description:
-      "Nous convenons ensemble du créneau idéal et préparons l'intervention.",
+      "Nous convenons des créneaux et mettons en place le protocole adapté à votre bien.",
   },
   {
     number: "04",
-    title: "Nettoyage",
+    title: "Intervention",
     description:
-      "Notre équipe intervient avec un protocole précis et un matériel professionnel.",
+      "Notre équipe intervient avec rigueur et discrétion, selon un protocole précis.",
   },
   {
     number: "05",
-    title: "Contrôle qualité",
+    title: "Contrôle",
     description:
-      "Nous vérifions chaque détail et validons le résultat avec vous.",
+      "Nous vérifions chaque détail et validons que votre bien est protégé et prêt.",
   },
 ];
 
@@ -290,17 +290,17 @@ export const trustPillars: TrustPillar[] = [
   {
     title: "Côté voyageur",
     items: [
-      "Logement impeccable à chaque arrivée",
-      "Standards de propreté élevés",
-      "Séjour confortable dès l'entrée dans les lieux",
+      "Un bien impeccable qui inspire confiance dès l'arrivée",
+      "Standards de propreté qui protègent votre réputation",
+      "Une expérience premium qui se traduit en avis 5 étoiles",
     ],
   },
   {
     title: "Côté propriétaire",
     items: [
-      "Vérification du logement après chaque séjour",
-      "Gestion des éventuelles dégradations",
-      "Logement toujours prêt pour les prochaines réservations",
+      "Vérification systématique après chaque séjour",
+      "Protection contre les dégradations et pertes de valeur",
+      "Un patrimoine toujours prêt, toujours valorisé",
     ],
   },
 ];
@@ -317,24 +317,19 @@ export const faqItems: FaqItem[] = [
       "Nous intervenons à Paris intra-muros et dans toute l'Île-de-France (75, 92, 93, 94 et proche couronne). Contactez-nous pour vérifier la disponibilité sur votre adresse.",
   },
   {
-    question: "Comment obtenir un devis ?",
+    question: "Comment protéger mon bien avec Atria ?",
     answer:
-      "Il vous suffit de remplir notre formulaire de demande de devis ou de nous contacter par téléphone. Nous vous répondons rapidement avec une proposition claire et sans engagement.",
+      "Il vous suffit de remplir notre formulaire ou de nous contacter par téléphone. Nous évaluons votre patrimoine et vous proposons un plan de protection sur mesure, clair et sans engagement.",
   },
   {
-    question: "Proposez-vous des rotations pour les logements Airbnb ?",
+    question: "Proposez-vous la protection des logements Airbnb ?",
     answer:
-      "Oui. Nous sommes spécialisés dans les rotations Airbnb avec nettoyage complet entre chaque séjour, gestion du linge en option et créneaux adaptés à vos check-in / check-out.",
+      "Oui. Nous protégeons votre patrimoine locatif avec vérification après chaque séjour, ménage aux standards des plateformes, gestion du linge et suivi des éventuelles dégradations.",
   },
   {
-    question: "Vos produits sont-ils écologiques ?",
+    question: "Mon bien est-il couvert en cas d'incident ?",
     answer:
-      "Nous privilégions des produits éco-responsables, efficaces et respectueux de la santé comme de l'environnement, adaptés à chaque type de surface.",
-  },
-  {
-    question: "Êtes-vous assurés ?",
-    answer:
-      "Oui, Atria Solutions est une société assurée en responsabilité civile professionnelle. Vous bénéficiez d'une prestation encadrée et sécurisée.",
+      "Atria Solutions est assurée en responsabilité civile professionnelle. Chaque intervention est encadrée, sécurisée et réalisée par des équipes formées.",
   },
   {
     question: "Peut-on planifier des interventions récurrentes ?",

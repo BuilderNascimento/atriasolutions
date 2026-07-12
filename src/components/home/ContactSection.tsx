@@ -25,8 +25,8 @@ export function ContactSection() {
       <div className="container-x">
         <SectionHeading
           eyebrow="Contact"
-          title="Parlons de votre projet"
-          description="Demandez votre devis gratuit ou posez-nous vos questions. Réponse rapide garantie."
+          title="Protégeons ensemble votre patrimoine"
+          description="Parlez-nous de votre bien. Nous vous proposons un plan de protection sur mesure — réponse rapide garantie."
         />
 
         <div className="mt-16 grid gap-8 lg:grid-cols-12 lg:gap-10">

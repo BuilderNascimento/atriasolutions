@@ -97,7 +97,7 @@ export function Navbar() {
             {siteConfig.contact.phone}
           </a>
           <ButtonLink href="/devis" size="md" variant="accent">
-            Demander un devis
+            {siteConfig.brand.ctaPrimary}
           </ButtonLink>
         </div>
 
@@ -145,7 +145,7 @@ export function Navbar() {
               </ul>
               <div className="mt-auto flex flex-col gap-3">
                 <ButtonLink href="/devis" variant="accent" className="w-full">
-                  Demander un devis
+                  {siteConfig.brand.ctaPrimary}
                 </ButtonLink>
                 <a
                   href={siteConfig.contact.phoneHref}

@@ -51,7 +51,7 @@ export function Testimonials() {
             <div>
               <span className="mb-3 block h-px w-12 bg-primary/20" />
               <h2 className="max-w-xl font-heading text-xl font-bold leading-snug text-primary sm:text-2xl lg:text-[1.75rem]">
-                Notre service ménage Airbnb a fait la différence&nbsp;:
+                Ils nous ont confié la protection de leur patrimoine&nbsp;:
               </h2>
             </div>
           </div>

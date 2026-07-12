@@ -8,10 +8,10 @@ import { ButtonLink } from "@/components/ui/Button";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 
 const pillars = [
-  "Professionnalisme et discrétion",
-  "Souci du détail à chaque étape",
-  "Qualité constante et contrôlée",
-  "Fiabilité et ponctualité",
+  "Protection du patrimoine immobilier",
+  "Préservation de la valeur et de la réputation",
+  "Discrétion et rigueur à chaque intervention",
+  "Tranquillité d'esprit pour les propriétaires",
 ];
 
 export function About() {
@@ -41,7 +41,7 @@ export function About() {
             >
               <p className="font-heading text-3xl font-bold text-accent-400">100%</p>
               <p className="mt-1 max-w-[9rem] text-sm text-secondary/80">
-                Satisfaction client, notre priorité absolue
+                Patrimoine protégé, propriétaire serein
               </p>
             </motion.div>
           </div>
@@ -50,8 +50,8 @@ export function About() {
             <SectionHeading
               align="left"
               eyebrow="À propos d'Atria"
-              title="Une entreprise pensée pour l'excellence"
-              description="Atria Solutions accompagne hôtes Airbnb, gestionnaires, agences et entreprises avec une seule ambition : offrir un service de nettoyage irréprochable, fiable et haut de gamme."
+              title="Gardiens de patrimoine, pas simples nettoyeurs"
+              description="Atria Solutions accompagne propriétaires, hôtes et gestionnaires avec une conviction : votre bien mérite d'être protégé, valorisé et entretenu avec la plus grande exigence."
             />
 
             <ul className="mt-8 grid gap-4 sm:grid-cols-2">

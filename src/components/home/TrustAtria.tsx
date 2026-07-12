@@ -47,7 +47,7 @@ export function TrustAtria() {
               variant="secondary"
               className="!rounded-none !border-primary/20 !px-10 !py-4 !text-xs !font-semibold !uppercase !tracking-[0.2em] !text-primary hover:!border-primary hover:!bg-primary hover:!text-white"
             >
-              Prendre rendez-vous avec un expert
+              Prendre rendez-vous
             </ButtonLink>
           </div>
         </Reveal>

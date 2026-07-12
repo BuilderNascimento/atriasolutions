@@ -9,9 +9,9 @@ import { services } from "@/lib/content";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Services de nettoyage",
+  title: "Nos expertises",
   description:
-    "Découvrez les services de nettoyage haut de gamme d'Atria Solutions à Paris : appartements, maisons, bureaux, fins de chantier, nettoyage en profondeur et prestations récurrentes.",
+    "Atria Solutions protège votre patrimoine à Paris : appartements, maisons, bureaux, fins de chantier et biens locatifs. Chaque intervention préserve la valeur de votre bien.",
   alternates: { canonical: "/services" },
 };
 
@@ -25,9 +25,9 @@ export default function ServicesPage() {
         ]}
       />
       <PageHeader
-        eyebrow="Nos services"
-        title="Des prestations de nettoyage sur mesure"
-        description="Chaque espace mérite une attention particulière. Découvrez nos services pensés pour les professionnels et les particuliers les plus exigeants."
+        eyebrow="Nos expertises"
+        title="Chaque bien mérite une protection sur mesure"
+        description="Nous adaptons notre protocole à chaque patrimoine — pour préserver sa valeur, sa réputation et votre tranquillité."
         breadcrumbs={[
           { name: "Accueil", href: "/" },
           { name: "Services", href: "/services" },
@@ -87,7 +87,7 @@ export default function ServicesPage() {
                     </ul>
                     <div className="mt-8">
                       <ButtonLink href="/devis" variant="accent" size="md">
-                        Demander un devis
+                        {siteConfig.brand.ctaPrimary}
                       </ButtonLink>
                     </div>
                   </Reveal>
@@ -103,17 +103,17 @@ export default function ServicesPage() {
         <div className="container-x relative flex flex-col items-center gap-8 text-center">
           <Reveal>
             <h2 className="max-w-2xl text-3xl font-bold text-balance sm:text-4xl">
-              Un besoin spécifique ? Parlons-en.
+              Un patrimoine à protéger ? Parlons-en.
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-secondary/85">
-              Nous adaptons nos prestations à votre activité. Décrivez-nous votre
-              projet et recevez une proposition claire, rapidement.
+              Chaque bien est unique. Décrivez le vôtre et recevez un plan de
+              protection adapté, rapidement.
             </p>
           </Reveal>
           <Reveal delay={0.1}>
             <div className="flex flex-col gap-3 sm:flex-row">
               <ButtonLink href="/devis" variant="accent">
-                Demander un devis
+                {siteConfig.brand.ctaPrimary}
               </ButtonLink>
               <ButtonLink
                 href={siteConfig.contact.phoneHref}
