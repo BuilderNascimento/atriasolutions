@@ -10,7 +10,6 @@ import { PartnersTrust } from "@/components/home/PartnersTrust";
 import { ProtectionManifesto } from "@/components/home/ProtectionManifesto";
 import { Stats } from "@/components/home/Stats";
 import { siteConfig } from "@/lib/site";
-import { HERO_IMAGE } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "À propos",
@@ -88,8 +87,8 @@ export default function AboutPage() {
           <Reveal>
             <div className="relative aspect-[4/5] overflow-hidden rounded-sm shadow-card">
               <Image
-                src={HERO_IMAGE}
-                alt="Professionnelle Atria Solutions — protection de patrimoine à Paris"
+                src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?auto=format&fit=crop&w=1200&q=80"
+                alt="Équipe Atria Solutions — protection de patrimoine à Paris"
                 fill
                 loading="lazy"
                 sizes="(max-width: 1024px) 100vw, 50vw"

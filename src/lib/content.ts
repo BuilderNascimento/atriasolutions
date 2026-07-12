@@ -1,4 +1,3 @@
-import { HERO_IMAGE } from "./images";
 import {
   Sparkles,
   Home,
@@ -59,7 +58,8 @@ export const services: Service[] = [
     description:
       "Chaque intervention protège votre appartement parisien : matériaux nobles préservés, finitions impeccables, réputation entretenue. Bien plus qu'un ménage — une sauvegarde de votre patrimoine.",
     icon: Sparkles,
-    image: HERO_IMAGE,
+    image:
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1400&q=80",
     features: [
       "Séjour, chambres et couloirs",
       "Cuisine dégraissée en profondeur",
@@ -74,7 +74,8 @@ export const services: Service[] = [
     description:
       "Maisons et hôtels particuliers confiés à une équipe dédiée. Notre protocole préserve chaque surface, chaque matériau — pour que votre bien conserve sa valeur et son éclat.",
     icon: Home,
-    image: HERO_IMAGE,
+    image:
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1400&q=80",
     features: [
       "Toutes pièces et étages",
       "Matériaux nobles préservés",
@@ -89,7 +90,8 @@ export const services: Service[] = [
     description:
       "Vos bureaux reflètent votre standing. Nous protégeons cette image avec un entretien discret, régulier et irréprochable — pour que chaque visiteur perçoive le professionnalisme de votre marque.",
     icon: Building2,
-    image: HERO_IMAGE,
+    image:
+      "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1400&q=80",
     features: [
       "Postes de travail et open spaces",
       "Salles de réunion",
@@ -104,7 +106,8 @@ export const services: Service[] = [
     description:
       "Après vos travaux, nous restituons un espace prêt à valoriser votre patrimoine. Chaque détail compte pour la présentation à vos acquéreurs ou locataires.",
     icon: HardHat,
-    image: HERO_IMAGE,
+    image:
+      "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1400&q=80",
     features: [
       "Dépoussiérage complet",
       "Retrait des résidus de travaux",
@@ -119,7 +122,8 @@ export const services: Service[] = [
     description:
       "Un entretien en profondeur pour les biens qui exigent une attention particulière. Nous protégeons vos surfaces les plus précieuses et prolongeons leur durée de vie.",
     icon: Waves,
-    image: HERO_IMAGE,
+    image:
+      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1400&q=80",
     features: [
       "Détartrage et dégraissage",
       "Désinfection des surfaces",
@@ -134,7 +138,8 @@ export const services: Service[] = [
     description:
       "Un suivi régulier pour que votre bien ne perde jamais de sa valeur. Idéal pour les rotations Airbnb, les résidences et les portefeuilles immobiliers exigeants.",
     icon: CalendarClock,
-    image: HERO_IMAGE,
+    image:
+      "https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=1400&q=80",
     features: [
       "Rotations Airbnb",
       "Planning sur mesure",

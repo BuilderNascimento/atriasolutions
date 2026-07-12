@@ -15,7 +15,6 @@ import {
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Stagger, staggerItem } from "@/components/ui/Reveal";
 import { ButtonLink } from "@/components/ui/Button";
-import { HERO_IMAGE } from "@/lib/images";
 
 type TurnoverCard = {
   icon: LucideIcon;
@@ -29,7 +28,8 @@ type TurnoverCard = {
 const cards: TurnoverCard[] = [
   {
     icon: ClipboardCheck,
-    image: HERO_IMAGE,
+    image:
+      "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=900&q=80",
     title: "Vérification du logement après le départ des voyageurs",
     intro:
       "Après chaque séjour, notre équipe intervient dans le logement et commence par effectuer une vérification attentive de son état général :",
@@ -43,7 +43,8 @@ const cards: TurnoverCard[] = [
   },
   {
     icon: BedDouble,
-    image: HERO_IMAGE,
+    image:
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=900&q=80",
     title: "Ménage professionnel entre chaque séjour",
     intro:
       "Après la vérification du logement, notre équipe réalise un ménage complet et standardisé :",
@@ -58,7 +59,8 @@ const cards: TurnoverCard[] = [
   },
   {
     icon: SprayCan,
-    image: HERO_IMAGE,
+    image:
+      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=900&q=80",
     title: "Nettoyage approfondi sur demande du propriétaire",
     intro:
       "En complément du ménage standard, nous pouvons organiser ponctuellement un « deep cleaning » afin d'approfondir certains éléments du logement :",
@@ -72,7 +74,8 @@ const cards: TurnoverCard[] = [
   },
   {
     icon: ShieldCheck,
-    image: HERO_IMAGE,
+    image:
+      "https://images.unsplash.com/photo-1554774853-719586f82d77?auto=format&fit=crop&w=900&q=80",
     title: "Gestion des dégradations et démarches auprès des plateformes",
     intro:
       "En cas de dégradation constatée après un séjour, nous prenons en charge l'ensemble des démarches administratives :",

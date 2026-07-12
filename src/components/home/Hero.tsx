@@ -6,7 +6,6 @@ import { useRef } from "react";
 import { ArrowRight, Star, ShieldCheck, Gem } from "lucide-react";
 import { ButtonLink } from "@/components/ui/Button";
 import { siteConfig } from "@/lib/site";
-import { HERO_IMAGE } from "@/lib/images";
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
@@ -27,8 +26,8 @@ export function Hero() {
     >
       <motion.div style={{ y, scale }} className="absolute inset-0">
         <Image
-          src={HERO_IMAGE}
-          alt="Professionnelle Atria Solutions en uniforme, protection d'un appartement parisien"
+          src="https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=2400&q=80"
+          alt="Appartement de luxe lumineux à Paris"
           fill
           priority
           sizes="100vw"
