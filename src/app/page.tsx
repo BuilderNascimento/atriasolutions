@@ -1,6 +1,7 @@
 import { Hero } from "@/components/home/Hero";
 import { WhyAtria } from "@/components/home/WhyAtria";
 import { Services } from "@/components/home/Services";
+import { AirbnbTurnover } from "@/components/home/AirbnbTurnover";
 import { Process } from "@/components/home/Process";
 import { About } from "@/components/home/About";
 import { Stats } from "@/components/home/Stats";
@@ -17,6 +18,7 @@ export default function HomePage() {
       <Hero />
       <WhyAtria />
       <Services />
+      <AirbnbTurnover />
       <Process />
       <About />
       <Stats />
