@@ -68,10 +68,10 @@ export default async function OgImage() {
               maxWidth: 900,
             }}
           >
-            Nettoyage professionnel à Paris.
+            Nous protégeons votre patrimoine.
           </span>
           <span style={{ color: "rgba(217,222,229,0.85)", fontSize: 28, marginTop: 24 }}>
-            Prestations haut de gamme · Appartements · Bureaux · Airbnb
+            Protection · Valeur · Réputation · Paris
           </span>
         </div>
       </div>

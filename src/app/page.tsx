@@ -1,4 +1,6 @@
 import { Hero } from "@/components/home/Hero";
+import { PartnersTrust } from "@/components/home/PartnersTrust";
+import { ProtectionManifesto } from "@/components/home/ProtectionManifesto";
 import { Services } from "@/components/home/Services";
 import { AirbnbTurnover } from "@/components/home/AirbnbTurnover";
 import { TrustAtria } from "@/components/home/TrustAtria";
@@ -16,6 +18,8 @@ export default function HomePage() {
     <>
       <FaqSchema />
       <Hero />
+      <PartnersTrust />
+      <ProtectionManifesto />
       <Services />
       <AirbnbTurnover />
       <TrustAtria />

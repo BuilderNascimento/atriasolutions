@@ -12,7 +12,7 @@ export function TrustAtria() {
           <div className="mx-auto max-w-3xl text-center">
             <span className="mx-auto mb-8 block h-px w-16 bg-primary/20" />
             <h2 className="font-heading text-2xl font-bold leading-snug text-primary sm:text-3xl lg:text-[2rem] text-balance">
-              Pourquoi confier le ménage et le check-out Airbnb à Atria&nbsp;?
+              Pourquoi confier la protection de votre bien à Atria&nbsp;?
             </h2>
           </div>
         </Reveal>

@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import { ArrowRight, Star, ShieldCheck, Leaf } from "lucide-react";
+import { ArrowRight, Star, ShieldCheck, Gem } from "lucide-react";
 import { ButtonLink } from "@/components/ui/Button";
 import { siteConfig } from "@/lib/site";
 
@@ -59,7 +59,7 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.1, ease }}
             className="mt-6 text-4xl font-bold leading-[1.05] text-white text-balance sm:text-5xl lg:text-6xl xl:text-7xl"
           >
-            Nettoyage professionnel à Paris.
+            Nous protégeons votre patrimoine.
           </motion.h1>
 
           <motion.p
@@ -68,8 +68,8 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.2, ease }}
             className="mt-6 max-w-xl text-lg leading-relaxed text-secondary/90 sm:text-xl"
           >
-            Des prestations haut de gamme pour appartements, maisons, bureaux et
-            fins de chantier.
+            Pas un simple ménage. Une protection de vos biens à Paris —
+            appartements, résidences et espaces professionnels.
           </motion.p>
 
           <motion.div
@@ -106,12 +106,12 @@ export function Hero() {
               <span>+{siteConfig.stats.clients} clients satisfaits</span>
             </span>
             <span className="inline-flex items-center gap-2">
-              <ShieldCheck className="h-4.5 w-4.5 text-accent-400" strokeWidth={1.75} />
-              Société assurée
+              <Gem className="h-4.5 w-4.5 text-accent-400" strokeWidth={1.75} />
+              Patrimoine protégé
             </span>
             <span className="inline-flex items-center gap-2">
-              <Leaf className="h-4.5 w-4.5 text-accent-400" strokeWidth={1.75} />
-              Produits éco-responsables
+              <ShieldCheck className="h-4.5 w-4.5 text-accent-400" strokeWidth={1.75} />
+              Société assurée
             </span>
           </motion.div>
         </div>

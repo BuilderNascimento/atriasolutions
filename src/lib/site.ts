@@ -7,9 +7,9 @@
 export const siteConfig = {
   name: "Atria Solutions",
   legalName: "Atria Solutions SAS",
-  tagline: "Nettoyage professionnel à Paris",
+  tagline: "Protection de patrimoine à Paris",
   description:
-    "Atria Solutions, société de nettoyage haut de gamme à Paris. Prestations premium pour appartements, maisons, bureaux, fins de chantier et rotations Airbnb en Île-de-France.",
+    "Atria Solutions protège votre patrimoine immobilier à Paris. Au-delà du nettoyage : préservation de la valeur, de la réputation et de la tranquillité des propriétaires, hôtes Airbnb et gestionnaires en Île-de-France.",
   // Remplacez par votre domaine réel (ex. www.atria-solutions.fr) une fois configuré
   url: "https://atriasolutions.vercel.app",
   locale: "fr_FR",

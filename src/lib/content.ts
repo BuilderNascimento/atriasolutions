@@ -26,6 +26,20 @@ export const navItems: NavItem[] = [
   { label: "Contact", href: "/contact" },
 ];
 
+export type PartnerType = {
+  name: string;
+  logo: "airbnb" | "booking" | "abritel" | "text";
+};
+
+export const partnerTypes: PartnerType[] = [
+  { name: "Airbnb", logo: "airbnb" },
+  { name: "Booking", logo: "booking" },
+  { name: "Abritel", logo: "abritel" },
+  { name: "Agences immobilières", logo: "text" },
+  { name: "Conciergeries", logo: "text" },
+  { name: "Hôtels", logo: "text" },
+];
+
 export type Service = {
   slug: string;
   title: string;

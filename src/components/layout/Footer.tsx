@@ -54,8 +54,8 @@ export function Footer() {
               </span>
             </span>
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-secondary/75">
-              Société de nettoyage professionnel à Paris. Des prestations haut de
-              gamme pour appartements, maisons, bureaux et fins de chantier en
+              Protection de patrimoine immobilier à Paris. Nous préservons la
+              valeur, la réputation et la tranquillité de vos biens en
               Île-de-France.
             </p>
             <div className="mt-6 flex gap-3">
