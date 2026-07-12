@@ -6,13 +6,9 @@ import { AnimatePresence, motion } from "framer-motion";
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 import { Reveal } from "@/components/ui/Reveal";
 import { testimonials } from "@/lib/content";
+import { HERO_IMAGE } from "@/lib/images";
 
-const backgrounds = [
-  "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=2000&q=80",
-  "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=2000&q=80",
-  "https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=2000&q=80",
-  "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=2000&q=80",
-];
+const backgrounds = [HERO_IMAGE];
 
 function highlightQuote(quote: string, highlight?: string) {
   if (!highlight || !quote.includes(highlight)) return `« ${quote} »`;
@@ -70,7 +66,7 @@ export function Testimonials() {
               >
                 <Image
                   src={backgrounds[index % backgrounds.length]}
-                  alt="Appartement parisien entretenu par Atria Solutions"
+                  alt="Appartement parisien protégé par Atria Solutions"
                   fill
                   loading="lazy"
                   sizes="(max-width: 1024px) 100vw, 80rem"

@@ -6,6 +6,7 @@ import { Check } from "lucide-react";
 import { Reveal } from "@/components/ui/Reveal";
 import { ButtonLink } from "@/components/ui/Button";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { HERO_IMAGE } from "@/lib/images";
 
 const pillars = [
   "Protection du patrimoine immobilier",
@@ -23,8 +24,8 @@ export function About() {
             <Reveal>
               <div className="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-card">
                 <Image
-                  src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80"
-                  alt="Agent d'entretien professionnel Atria Solutions"
+                  src={HERO_IMAGE}
+                  alt="Professionnelle Atria Solutions protégeant un bien à Paris"
                   fill
                   loading="lazy"
                   sizes="(max-width: 1024px) 100vw, 50vw"
