@@ -23,6 +23,10 @@ const stats: Stat[] = [
   { value: siteConfig.stats.years, label: "Ans d'expérience" },
 ];
 
+function formatStat(value: number) {
+  return value.toLocaleString("fr-FR");
+}
+
 function Counter({ value }: { value: number }) {
   const ref = useRef<HTMLSpanElement>(null);
   const inView = useInView(ref, { once: true, margin: "-60px" });
@@ -36,36 +40,36 @@ function Counter({ value }: { value: number }) {
       return;
     }
     const controls = animate(0, value, {
-      duration: 2,
+      duration: 2.2,
       ease: [0.22, 1, 0.36, 1],
       onUpdate: (v) => setDisplay(Math.round(v)),
     });
     return () => controls.stop();
   }, [inView, value, reduce]);
 
-  return <span ref={ref}>{display}</span>;
+  return <span ref={ref}>{formatStat(display)}</span>;
 }
 
 export function Stats() {
   return (
-    <section className="relative bg-white py-20 lg:py-24">
+    <section className="relative bg-white py-16 lg:py-20">
       <div className="container-x">
-        <div className="grid grid-cols-2 gap-y-12 rounded-3xl border border-secondary/60 bg-secondary-100/50 px-6 py-14 lg:grid-cols-4 lg:px-12">
+        <div className="grid grid-cols-2 gap-y-8 rounded-2xl border border-secondary/60 bg-secondary-100/50 px-5 py-10 sm:px-8 lg:grid-cols-4 lg:gap-y-0 lg:px-10 lg:py-12">
           {stats.map((stat, i) => (
             <motion.div
               key={stat.label}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: i * 0.1 }}
+              transition={{ duration: 0.5, delay: i * 0.08 }}
               className="flex flex-col items-center text-center"
             >
-              <p className="font-heading text-4xl font-bold text-primary sm:text-5xl lg:text-6xl">
+              <p className="font-heading text-3xl font-bold tracking-tight text-primary sm:text-4xl lg:text-[2.75rem]">
                 {stat.prefix}
                 <Counter value={stat.value} />
                 {stat.suffix}
               </p>
-              <p className="mt-3 text-sm font-medium text-muted">{stat.label}</p>
+              <p className="mt-2 text-xs font-medium text-muted sm:text-sm">{stat.label}</p>
             </motion.div>
           ))}
         </div>

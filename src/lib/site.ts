@@ -32,9 +32,10 @@ export const siteConfig = {
   },
   stats: {
     years: 5,
-    clients: 100,
-    apartments: 200,
-    projects: 350,
+    clients: 1200,
+    apartments: 650,
+    /** ~3 ans × 5/j + 1 an × 9/j (365 j) ≈ 8 760 */
+    projects: 8700,
   },
   brand: {
     promise: "Un ménage soigné, digne de Paris.",
