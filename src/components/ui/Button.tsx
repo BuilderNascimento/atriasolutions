@@ -8,8 +8,8 @@ const base =
   "group relative inline-flex items-center justify-center gap-2 font-medium tracking-tight transition-all duration-300 rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/60 focus-visible:ring-offset-2 disabled:opacity-60 disabled:pointer-events-none";
 
 const sizes: Record<Size, string> = {
-  md: "text-sm px-5 py-2.5",
-  lg: "text-base px-7 py-3.5",
+  md: "text-sm min-h-11 px-5 py-2.5",
+  lg: "text-base min-h-12 px-7 py-3.5",
 };
 
 const variants: Record<Variant, string> = {

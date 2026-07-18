@@ -62,9 +62,9 @@ export const services: Service[] = [
   {
     slug: "nettoyage-appartement",
     title: "Nettoyage d'appartement",
-    short: "La valeur de votre appartement, préservée à chaque passage.",
+    short: "Un appartement propre, accueillant et prêt à vivre.",
     description:
-      "Chaque intervention protège votre appartement parisien : matériaux nobles préservés, finitions impeccables, réputation entretenue. Bien plus qu'un ménage — une sauvegarde de votre patrimoine.",
+      "Nous prenons soin de votre appartement parisien : pièces de vie, cuisine, sanitaires et détails qui font la différence. Un résultat net et agréable, à chaque passage.",
     icon: Sparkles,
     image: SERVICE_APPARTEMENT_IMAGE,
     features: [
@@ -77,14 +77,14 @@ export const services: Service[] = [
   {
     slug: "nettoyage-maison",
     title: "Nettoyage de maison",
-    short: "Votre résidence protégée, pièce après pièce.",
+    short: "Toute la maison entretenue, pièce après pièce.",
     description:
-      "Maisons et hôtels particuliers confiés à une équipe dédiée. Notre protocole préserve chaque surface, chaque matériau — pour que votre bien conserve sa valeur et son éclat.",
+      "Maisons et hôtels particuliers confiés à une équipe dédiée. Nous adaptons notre travail à chaque surface et à chaque pièce — pour un intérieur propre et soigné.",
     icon: Home,
     image: SERVICE_MAISON_IMAGE,
     features: [
       "Toutes pièces et étages",
-      "Matériaux nobles préservés",
+      "Matériaux nobles respectés",
       "Équipe dédiée",
       "Produits adaptés aux surfaces",
     ],
@@ -92,9 +92,9 @@ export const services: Service[] = [
   {
     slug: "nettoyage-bureaux",
     title: "Nettoyage de bureaux",
-    short: "L'image de votre entreprise, protégée au quotidien.",
+    short: "Des espaces de travail propres et agréables au quotidien.",
     description:
-      "Vos bureaux reflètent votre standing. Nous protégeons cette image avec un entretien discret, régulier et irréprochable — pour que chaque visiteur perçoive le professionnalisme de votre marque.",
+      "Vos bureaux accueillent collaborateurs et clients. Nous assurons un entretien discret, régulier et soigné — pour un environnement professionnel et confortable.",
     icon: Building2,
     image: SERVICE_BUREAUX_IMAGE,
     features: [
@@ -107,9 +107,9 @@ export const services: Service[] = [
   {
     slug: "nettoyage-fin-de-chantier",
     title: "Nettoyage de fin de chantier",
-    short: "Votre bien livré dans un état irréprochable.",
+    short: "Un espace livré propre, prêt à être habité ou présenté.",
     description:
-      "Après vos travaux, nous restituons un espace prêt à valoriser votre patrimoine. Chaque détail compte pour la présentation à vos acquéreurs ou locataires.",
+      "Après vos travaux, nous enlevons poussières et résidus pour restituer un lieu impeccable — prêt pour l'emménagement, la visite ou la location.",
     icon: HardHat,
     image: SERVICE_FIN_CHANTIER_IMAGE,
     features: [
@@ -122,9 +122,9 @@ export const services: Service[] = [
   {
     slug: "nettoyage-en-profondeur",
     title: "Nettoyage en profondeur",
-    short: "Une remise en état qui préserve la valeur de votre bien.",
+    short: "Une remise en état complète, dans les moindres détails.",
     description:
-      "Un entretien en profondeur pour les biens qui exigent une attention particulière. Nous protégeons vos surfaces les plus précieuses et prolongeons leur durée de vie.",
+      "Idéal pour un grand ménage, un emménagement ou une remise à neuf. Nous traitons les zones souvent oubliées et redonnons de l'éclat à votre intérieur.",
     icon: Waves,
     image: SERVICE_PROFONDEUR_IMAGE,
     features: [
@@ -137,9 +137,9 @@ export const services: Service[] = [
   {
     slug: "nettoyage-recurrent",
     title: "Nettoyage récurrent",
-    short: "Votre patrimoine entretenu en continu, sans effort.",
+    short: "Un entretien régulier, sans que vous ayez à y penser.",
     description:
-      "Un suivi régulier pour que votre bien ne perde jamais de sa valeur. Idéal pour les rotations Airbnb, les résidences et les portefeuilles immobiliers exigeants.",
+      "Planning sur mesure pour garder votre logement ou vos bureaux propres toute l'année. Idéal aussi pour les rotations Airbnb et les résidences.",
     icon: CalendarClock,
     image: SERVICE_RECURRENT_IMAGE,
     features: [
@@ -167,7 +167,7 @@ export const advantages: Advantage[] = [
   {
     title: "Réponse rapide",
     description:
-      "Une prise en charge réactive et des créneaux disponibles, y compris pour les demandes urgentes.",
+      "Une prise en charge réactive et des créneaux disponibles, y compris pour les demandes urgentes. Réponse sous 24 h ouvrées.",
     icon: Zap,
   },
   {
@@ -191,7 +191,7 @@ export const advantages: Advantage[] = [
   {
     title: "Assuré",
     description:
-      "Société assurée en responsabilité civile professionnelle pour une tranquillité totale.",
+      "Société assurée en responsabilité civile professionnelle pour votre tranquillité.",
     icon: Award,
   },
 ];
@@ -205,33 +205,33 @@ export type ProcessStep = {
 export const processSteps: ProcessStep[] = [
   {
     number: "01",
-    title: "Évaluation",
+    title: "Échange",
     description:
-      "Vous nous confiez votre bien. Nous analysons vos besoins et évaluons comment mieux protéger votre patrimoine.",
+      "Vous nous décrivez votre besoin. Nous écoutons, posons les bonnes questions et clarifions le périmètre.",
   },
   {
     number: "02",
-    title: "Proposition",
+    title: "Devis",
     description:
-      "Nous établissons un plan de protection sur mesure, clair et transparent, sans engagement.",
+      "Nous vous envoyons une proposition claire et transparente, sans engagement — adaptée à votre espace.",
   },
   {
     number: "03",
     title: "Planification",
     description:
-      "Nous convenons des créneaux et mettons en place le protocole adapté à votre bien.",
+      "Nous convenons d'un créneau qui vous convient et préparons l'intervention.",
   },
   {
     number: "04",
     title: "Intervention",
     description:
-      "Notre équipe intervient avec rigueur et discrétion, selon un protocole précis.",
+      "Notre équipe arrive à l'heure, équipe et produits adaptés, et travaille avec soin et discrétion.",
   },
   {
     number: "05",
     title: "Contrôle",
     description:
-      "Nous vérifions chaque détail et validons que votre bien est protégé et prêt.",
+      "Nous vérifions chaque détail avant de vous rendre un espace propre et prêt.",
   },
 ];
 
@@ -292,17 +292,17 @@ export const trustPillars: TrustPillar[] = [
   {
     title: "Côté voyageur",
     items: [
-      "Un bien impeccable qui inspire confiance dès l'arrivée",
-      "Standards de propreté qui protègent votre réputation",
-      "Une expérience premium qui se traduit en avis 5 étoiles",
+      "Un logement impeccable dès l'arrivée",
+      "Standards de propreté au niveau des plateformes",
+      "Une expérience agréable qui se traduit en avis 5 étoiles",
     ],
   },
   {
     title: "Côté propriétaire",
     items: [
-      "Vérification systématique après chaque séjour",
-      "Protection contre les dégradations et pertes de valeur",
-      "Un patrimoine toujours prêt, toujours valorisé",
+      "Vérification attentive après chaque séjour",
+      "Signalement rapide des anomalies ou dégradations",
+      "Un logement toujours prêt pour le prochain séjour",
     ],
   },
 ];
@@ -316,27 +316,74 @@ export const faqItems: FaqItem[] = [
   {
     question: "Dans quelles zones intervenez-vous ?",
     answer:
-      "Nous intervenons à Paris intra-muros et dans toute l'Île-de-France (75, 92, 93, 94 et proche couronne). Contactez-nous pour vérifier la disponibilité sur votre adresse.",
+      "Nous intervenons exclusivement à Paris (tous les arrondissements). Contactez-nous pour confirmer la disponibilité sur votre adresse.",
   },
   {
-    question: "Comment protéger mon bien avec Atria ?",
+    question: "Comment obtenir un devis ?",
     answer:
-      "Il vous suffit de remplir notre formulaire ou de nous contacter par téléphone. Nous évaluons votre patrimoine et vous proposons un plan de protection sur mesure, clair et sans engagement.",
+      "Remplissez notre formulaire ou appelez-nous. Nous étudions votre besoin et vous envoyons un devis clair sous 24 h ouvrées, sans engagement.",
   },
   {
-    question: "Proposez-vous la protection des logements Airbnb ?",
+    question: "Proposez-vous le ménage Airbnb entre chaque séjour ?",
     answer:
-      "Oui. Nous protégeons votre patrimoine locatif avec vérification après chaque séjour, ménage aux standards des plateformes, gestion du linge et suivi des éventuelles dégradations.",
+      "Oui. Nous assurons la vérification du logement, le ménage aux standards des plateformes, la préparation du linge et le suivi des éventuelles dégradations.",
   },
   {
-    question: "Mon bien est-il couvert en cas d'incident ?",
+    question: "Êtes-vous assurés ?",
     answer:
-      "Atria Solutions est assurée en responsabilité civile professionnelle. Chaque intervention est encadrée, sécurisée et réalisée par des équipes formées.",
+      "Oui. Atria Solutions est assurée en responsabilité civile professionnelle. Chaque intervention est réalisée par une équipe formée et encadrée.",
   },
   {
     question: "Peut-on planifier des interventions récurrentes ?",
     answer:
       "Absolument. Nous proposons des plannings sur mesure : quotidien, hebdomadaire, mensuel ou à la demande, avec un interlocuteur dédié.",
+  },
+  {
+    question: "Comment sont calculés vos tarifs ?",
+    answer:
+      "Les tarifs dépendent de la surface, du type de prestation et de la fréquence. Nous proposons des devis personnalisés — indicativement à partir d'environ 35 €/h ou forfaits selon le service. Contactez-nous pour une estimation précise.",
+  },
+];
+
+export type PricingPackage = {
+  name: string;
+  priceHint: string;
+  description: string;
+  features: string[];
+  highlighted?: boolean;
+};
+
+export const pricingPackages: PricingPackage[] = [
+  {
+    name: "Ponctuel",
+    priceHint: "À partir de 89 €",
+    description: "Idéal pour un grand ménage, un emménagement ou une visite.",
+    features: [
+      "Devis sous 24 h",
+      "Intervention sur créneau convenu",
+      "Contrôle qualité inclus",
+    ],
+  },
+  {
+    name: "Récurrent",
+    priceHint: "À partir de 75 € / passage",
+    description: "Entretien régulier de votre appartement ou de vos bureaux.",
+    features: [
+      "Planning hebdomadaire ou bi-mensuel",
+      "Tarif préférentiel",
+      "Interlocuteur dédié",
+    ],
+    highlighted: true,
+  },
+  {
+    name: "Airbnb / Rotation",
+    priceHint: "Sur devis",
+    description: "Turnover complet entre chaque séjour, aux standards des plateformes.",
+    features: [
+      "Vérification + ménage",
+      "Linge et consommables",
+      "Suivi des dégradations",
+    ],
   },
 ];
 
@@ -345,13 +392,12 @@ export type ServiceAreaZone = {
   code: string;
 };
 
+/** Zone d'intervention : Paris uniquement */
 export const serviceAreas: ServiceAreaZone[] = [
-  { name: "Paris", code: "75" },
-  { name: "Hauts-de-Seine", code: "92" },
-  { name: "Seine-Saint-Denis", code: "93" },
-  { name: "Val-de-Marne", code: "94" },
-  { name: "Yvelines", code: "78" },
-  { name: "Essonne", code: "91" },
-  { name: "Val-d'Oise", code: "95" },
-  { name: "Seine-et-Marne", code: "77" },
+  { name: "Paris Centre", code: "1er–4e" },
+  { name: "Paris Est", code: "11e–12e·20e" },
+  { name: "Paris Ouest", code: "7e–8e·16e–17e" },
+  { name: "Paris Nord", code: "9e–10e·18e–19e" },
+  { name: "Paris Sud", code: "5e–6e·13e–15e" },
+  { name: "Tous arrondissements", code: "75001–75020" },
 ];

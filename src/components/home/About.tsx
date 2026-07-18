@@ -9,10 +9,10 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ABOUT_IMAGE } from "@/lib/images";
 
 const pillars = [
-  "Protection du patrimoine immobilier",
-  "Préservation de la valeur et de la réputation",
-  "Discrétion et rigueur à chaque intervention",
-  "Tranquillité d'esprit pour les propriétaires",
+  "Équipe formée et en uniforme",
+  "Résultat soigné à chaque passage",
+  "Discrétion et ponctualité",
+  "Assuré en responsabilité civile",
 ];
 
 export function About() {
@@ -25,7 +25,7 @@ export function About() {
               <div className="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-card">
                 <Image
                   src={ABOUT_IMAGE}
-                  alt="Professionnelle Atria Solutions — entretien rigoureux de votre patrimoine"
+                  alt="Professionnelle Atria Solutions en uniforme — nettoyage soigné d'un appartement parisien"
                   fill
                   loading="lazy"
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -40,9 +40,9 @@ export function About() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="absolute -bottom-6 -right-4 rounded-2xl bg-primary p-6 text-white shadow-float sm:-right-8 sm:p-7"
             >
-              <p className="font-heading text-3xl font-bold text-accent-400">100%</p>
+              <p className="font-heading text-3xl font-bold text-accent-400">5★</p>
               <p className="mt-1 max-w-[9rem] text-sm text-secondary/80">
-                Patrimoine protégé, propriétaire serein
+                Propreté notée par nos clients
               </p>
             </motion.div>
           </div>
@@ -51,8 +51,8 @@ export function About() {
             <SectionHeading
               align="left"
               eyebrow="À propos d'Atria"
-              title="Gardiens de patrimoine, pas simples nettoyeurs"
-              description="Atria Solutions accompagne propriétaires, hôtes et gestionnaires avec une conviction : votre bien mérite d'être protégé, valorisé et entretenu avec la plus grande exigence."
+              title="Une équipe de nettoyage exigeante, à taille humaine"
+              description="Atria Solutions accompagne propriétaires, hôtes Airbnb et professionnels à Paris avec une conviction simple : un espace propre, c'est un espace plus agréable à vivre."
             />
 
             <ul className="mt-8 grid gap-4 sm:grid-cols-2">

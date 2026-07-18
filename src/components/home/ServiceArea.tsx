@@ -5,6 +5,7 @@ import { MapPin } from "lucide-react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { serviceAreas } from "@/lib/content";
 import { ButtonLink } from "@/components/ui/Button";
+import { siteConfig } from "@/lib/site";
 
 export function ServiceArea() {
   return (
@@ -15,8 +16,8 @@ export function ServiceArea() {
             <SectionHeading
               align="left"
               eyebrow="Zone d'intervention"
-              title="Paris & toute l'Île-de-France"
-              description="Nous protégeons les patrimoines immobiliers à Paris et dans toute l'Île-de-France — au plus près de vos biens."
+              title="Paris, et rien que Paris"
+              description="Nous intervenons dans tous les arrondissements de Paris. Proches de vous, réactifs, et concentrés sur la qualité."
             />
 
             <div className="mt-8 flex flex-wrap gap-2.5">
@@ -38,7 +39,7 @@ export function ServiceArea() {
 
             <div className="mt-10">
               <ButtonLink href="/devis" variant="accent">
-                Protéger mon bien
+                {siteConfig.brand.ctaPrimary}
               </ButtonLink>
             </div>
           </div>
@@ -52,8 +53,8 @@ export function ServiceArea() {
           >
             <div className="aspect-[4/3] w-full">
               <iframe
-                title="Zone d'intervention Atria Solutions — Paris et Île-de-France"
-                src="https://www.openstreetmap.org/export/embed.html?bbox=1.8%2C48.6%2C2.8%2C49.05&layer=mapnik&marker=48.8566%2C2.3522"
+                title="Zone d'intervention Atria Solutions — Paris"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=2.24%2C48.81%2C2.45%2C48.91&layer=mapnik&marker=48.8566%2C2.3522"
                 className="h-full w-full grayscale-[35%] contrast-[1.05]"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

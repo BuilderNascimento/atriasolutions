@@ -8,6 +8,7 @@ import { Process } from "@/components/home/Process";
 import { About } from "@/components/home/About";
 import { Stats } from "@/components/home/Stats";
 import { Testimonials } from "@/components/home/Testimonials";
+import { Pricing } from "@/components/home/Pricing";
 import { ServiceArea } from "@/components/home/ServiceArea";
 import { Faq } from "@/components/home/Faq";
 import { ContactSection } from "@/components/home/ContactSection";
@@ -27,6 +28,7 @@ export default function HomePage() {
       <About />
       <Stats />
       <Testimonials />
+      <Pricing />
       <ServiceArea />
       <Faq />
       <ContactSection />

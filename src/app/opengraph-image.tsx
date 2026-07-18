@@ -56,22 +56,22 @@ export default async function OgImage() {
 
         <div style={{ display: "flex", flexDirection: "column" }}>
           <span style={{ color: "#34a870", fontSize: 24, fontWeight: 700, letterSpacing: 4 }}>
-            PARIS · ÎLE-DE-FRANCE
+            PARIS · TOUS ARRONDISSEMENTS
           </span>
           <span
             style={{
               color: "#fff",
-              fontSize: 72,
+              fontSize: 64,
               fontWeight: 800,
               lineHeight: 1.05,
               marginTop: 16,
               maxWidth: 900,
             }}
           >
-            Nous protégeons votre patrimoine.
+            Un ménage soigné, digne de Paris.
           </span>
           <span style={{ color: "rgba(217,222,229,0.85)", fontSize: 28, marginTop: 24 }}>
-            Protection · Valeur · Réputation · Paris
+            Propreté · Fiabilité · Discrétion · Paris
           </span>
         </div>
       </div>

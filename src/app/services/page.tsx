@@ -9,9 +9,9 @@ import { services } from "@/lib/content";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Nos expertises",
+  title: "Nos services",
   description:
-    "Atria Solutions protège votre patrimoine à Paris : appartements, maisons, bureaux, fins de chantier et biens locatifs. Chaque intervention préserve la valeur de votre bien.",
+    "Services de nettoyage professionnel à Paris : appartements, maisons, bureaux, fins de chantier, ménage en profondeur et rotations Airbnb.",
   alternates: { canonical: "/services" },
 };
 
@@ -25,9 +25,9 @@ export default function ServicesPage() {
         ]}
       />
       <PageHeader
-        eyebrow="Nos expertises"
-        title="Chaque bien mérite une protection sur mesure"
-        description="Nous adaptons notre protocole à chaque patrimoine — pour préserver sa valeur, sa réputation et votre tranquillité."
+        eyebrow="Nos services"
+        title="Des prestations adaptées à chaque espace"
+        description="Appartement, maison, bureau ou logement Airbnb — nous adaptons notre ménage à vos besoins à Paris."
         breadcrumbs={[
           { name: "Accueil", href: "/" },
           { name: "Services", href: "/services" },
@@ -56,7 +56,7 @@ export default function ServicesPage() {
                     <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-card">
                       <Image
                         src={service.image}
-                        alt={service.title}
+                        alt={`${service.title} — Atria Solutions Paris`}
                         fill
                         loading="lazy"
                         sizes="(max-width: 1024px) 100vw, 50vw"
@@ -103,11 +103,11 @@ export default function ServicesPage() {
         <div className="container-x relative flex flex-col items-center gap-8 text-center">
           <Reveal>
             <h2 className="max-w-2xl text-3xl font-bold text-balance sm:text-4xl">
-              Un patrimoine à protéger ? Parlons-en.
+              Un projet de nettoyage ? Parlons-en.
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-secondary/85">
-              Chaque bien est unique. Décrivez le vôtre et recevez un plan de
-              protection adapté, rapidement.
+              Décrivez votre besoin et recevez un devis clair, rapidement —
+              sans engagement.
             </p>
           </Reveal>
           <Reveal delay={0.1}>

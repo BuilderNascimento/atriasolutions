@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { Shield, Gem, HeartHandshake, Landmark, ConciergeBell, Wrench, Building } from "lucide-react";
+import { Sparkles, HeartHandshake, Clock, Leaf, ConciergeBell, Wrench, Building } from "lucide-react";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Reveal, Stagger, StaggerItem } from "@/components/ui/Reveal";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -14,34 +14,34 @@ import { siteConfig } from "@/lib/site";
 export const metadata: Metadata = {
   title: "À propos",
   description:
-    "Atria Solutions protège votre patrimoine immobilier à Paris. Au-delà du nettoyage : préservation de la valeur, de la réputation et de la tranquillité des propriétaires.",
+    "Atria Solutions — entreprise de nettoyage professionnel à Paris. Une équipe soignée, réactive et assurée pour appartements, bureaux et logements Airbnb.",
   alternates: { canonical: "/a-propos" },
 };
 
 const values = [
   {
-    icon: Shield,
-    title: "Protection",
-    description:
-      "Chaque intervention vise à préserver la valeur et l'intégrité de votre bien — pas seulement à le nettoyer.",
-  },
-  {
-    icon: Gem,
+    icon: Sparkles,
     title: "Exigence",
     description:
-      "Les finitions font la différence entre un espace propre et un patrimoine impeccablement entretenu.",
+      "Les détails font la différence. Nous soignons chaque coin, chaque surface, chaque finition.",
   },
   {
-    icon: Landmark,
-    title: "Patrimoine",
+    icon: Clock,
+    title: "Ponctualité",
     description:
-      "Nous traitons chaque bien comme un investissement précieux, avec le respect qu'il mérite.",
+      "Nous arrivons à l'heure, respectons les créneaux convenus et tenons nos engagements.",
+  },
+  {
+    icon: Leaf,
+    title: "Respect",
+    description:
+      "Produits adaptés, surfaces préservées, espaces traités avec soin — comme s'ils étaient les nôtres.",
   },
   {
     icon: HeartHandshake,
     title: "Confiance",
     description:
-      "Votre tranquillité est notre priorité. Nous construisons des relations durables, fondées sur la fiabilité.",
+      "Votre tranquillité compte. Nous construisons des relations durables, fondées sur la fiabilité.",
   },
 ];
 
@@ -49,17 +49,17 @@ const future = [
   {
     icon: ConciergeBell,
     title: "Conciergerie",
-    description: "Protection complète de l'expérience voyageur et du propriétaire.",
+    description: "Accompagnement élargi pour l'expérience voyageur et le propriétaire.",
   },
   {
     icon: Building,
     title: "Gestion locative",
-    description: "Prise en charge et valorisation de vos biens en location courte durée.",
+    description: "Prise en charge du ménage et de la préparation de vos biens en location.",
   },
   {
     icon: Wrench,
     title: "Maintenance",
-    description: "Entretien préventif pour préserver la valeur de vos espaces.",
+    description: "Entretien préventif pour garder vos espaces en excellent état.",
   },
 ];
 
@@ -74,8 +74,8 @@ export default function AboutPage() {
       />
       <PageHeader
         eyebrow="À propos d'Atria"
-        title="Gardiens de patrimoine à Paris"
-        description="Atria Solutions est née d'une conviction simple : un bien immobilier mérite d'être protégé, pas seulement nettoyé."
+        title="Une entreprise de nettoyage à taille humaine, à Paris"
+        description="Atria Solutions est née d'une conviction simple : un espace propre, c'est un espace plus agréable à vivre — pour vous, vos voyageurs et vos clients."
         breadcrumbs={[
           { name: "Accueil", href: "/" },
           { name: "À propos", href: "/a-propos" },
@@ -88,7 +88,7 @@ export default function AboutPage() {
             <div className="relative aspect-[4/5] overflow-hidden rounded-sm shadow-card">
               <Image
                 src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?auto=format&fit=crop&w=1200&q=80"
-                alt="Équipe Atria Solutions — protection de patrimoine à Paris"
+                alt="Équipe Atria Solutions — nettoyage professionnel à Paris"
                 fill
                 loading="lazy"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -100,20 +100,19 @@ export default function AboutPage() {
             <SectionHeading
               align="left"
               eyebrow="Notre mission"
-              title="Protéger ce que vous avez construit"
-              description="Nous accompagnons propriétaires, hôtes Airbnb, gestionnaires, agences et hôtels avec une promesse unique : préserver la valeur, la réputation et la tranquillité de chaque patrimoine confié."
+              title="Prendre soin de vos espaces, au quotidien"
+              description="Nous accompagnons propriétaires, hôtes Airbnb, gestionnaires, agences et hôtels avec une promesse claire : un ménage soigné, fiable et adapté à Paris."
             />
             <div className="mt-6 space-y-4 text-base leading-relaxed text-muted">
               <p>
-                Un appartement parisien à €900&nbsp;000 ne se traite pas comme
-                un simple logement à entretenir. C&apos;est un investissement,
-                une réputation, une sérénité. C&apos;est pourquoi chaque
-                intervention Atria est pensée comme un acte de protection.
+                Que ce soit pour un appartement, des bureaux ou une rotation
+                Airbnb, nous intervenons avec la même exigence : propreté,
+                ponctualité et un vrai sens du détail.
               </p>
               <p>
-                Notre ambition : devenir la référence de la protection
-                immobilière à Paris et en Île-de-France — là où la qualité et
-                la confiance ne sont pas des options, mais des exigences.
+                Notre ambition : devenir une référence du nettoyage
+                professionnel à Paris — là où la qualité et la confiance ne
+                sont pas des options, mais des exigences.
               </p>
             </div>
             <div className="mt-8">
@@ -162,8 +161,8 @@ export default function AboutPage() {
         <div className="container-x">
           <SectionHeading
             eyebrow="Bientôt disponible"
-            title="Une protection qui va plus loin"
-            description="Nous développons une offre complète pour protéger vos biens de A à Z."
+            title="Aller encore plus loin avec vous"
+            description="Nous développons de nouveaux services pour accompagner vos besoins au quotidien."
           />
           <Stagger className="mt-16 grid gap-6 md:grid-cols-3">
             {future.map((f) => {

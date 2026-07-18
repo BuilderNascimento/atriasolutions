@@ -13,8 +13,8 @@ export function Process() {
         <SectionHeading
           light
           eyebrow="Notre méthode"
-          title="Cinq étapes pour protéger votre bien"
-          description="Un processus clair et maîtrisé, de l'évaluation initiale au contrôle final de votre patrimoine."
+          title="Cinq étapes, simples et claires"
+          description="De la première demande au contrôle final — un parcours fluide, sans mauvaise surprise."
         />
 
         <div className="relative mt-20">

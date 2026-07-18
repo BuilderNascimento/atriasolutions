@@ -18,8 +18,8 @@ export function Faq() {
             <SectionHeading
               align="left"
               eyebrow="Questions fréquentes"
-              title="Protéger son patrimoine, en toute sérénité"
-              description="Les réponses aux questions que se posent les propriétaires qui nous confient leurs biens."
+              title="Vos questions, nos réponses"
+              description="Tout ce qu'il faut savoir avant de faire appel à Atria Solutions à Paris."
             />
             <div className="mt-8 hidden lg:block">
               <ButtonLink href="/contact" variant="primary">
@@ -39,7 +39,7 @@ export function Faq() {
                         type="button"
                         onClick={() => setOpen(isOpen ? null : i)}
                         aria-expanded={isOpen}
-                        className="flex w-full items-center justify-between gap-4 py-4 text-left"
+                        className="flex w-full min-h-11 items-center justify-between gap-4 py-4 text-left"
                       >
                         <span className="font-heading text-base font-bold text-primary sm:text-lg">
                           {item.question}

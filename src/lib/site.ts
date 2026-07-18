@@ -7,9 +7,9 @@
 export const siteConfig = {
   name: "Atria Solutions",
   legalName: "Atria Solutions SAS",
-  tagline: "Protection de patrimoine à Paris",
+  tagline: "Nettoyage professionnel à Paris",
   description:
-    "Atria Solutions protège votre patrimoine immobilier à Paris. Au-delà du nettoyage : préservation de la valeur, de la réputation et de la tranquillité des propriétaires, hôtes Airbnb et gestionnaires en Île-de-France.",
+    "Atria Solutions — entreprise de nettoyage professionnel à Paris. Appartements, maisons, bureaux, Airbnb et fins de chantier. Une équipe soignée, réactive et assurée.",
   // Remplacez par votre domaine réel (ex. www.atria-solutions.fr) une fois configuré
   url: "https://atriasolutions.vercel.app",
   locale: "fr_FR",
@@ -39,12 +39,12 @@ export const siteConfig = {
     projects: 350,
   },
   brand: {
-    promise: "Nous protégeons votre patrimoine.",
-    manifestoLine1: "Nous ne nettoyons pas.",
-    manifestoLine2: "Nous protégeons votre patrimoine.",
+    promise: "Un ménage soigné, digne de Paris.",
+    manifestoLine1: "Nous nettoyons avec soin.",
+    manifestoLine2: "Pour que votre espace soit toujours accueillant.",
     valueProposition:
-      "Votre bien immobilier représente un investissement précieux. Nous préservons sa valeur, sa réputation et votre tranquillité.",
-    ctaPrimary: "Protéger mon bien",
+      "Propriétaires, hôtes Airbnb et professionnels : nous prenons soin de vos espaces avec exigence, discrétion et un vrai sens du détail.",
+    ctaPrimary: "Demander un devis",
     ctaSecondary: "Nous contacter",
   },
 } as const;

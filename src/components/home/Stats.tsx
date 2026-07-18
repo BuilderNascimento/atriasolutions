@@ -17,10 +17,10 @@ type Stat = {
 };
 
 const stats: Stat[] = [
-  { value: siteConfig.stats.apartments, prefix: "+", label: "Biens protégés" },
-  { value: siteConfig.stats.clients, prefix: "+", label: "Propriétaires qui nous font confiance" },
-  { value: siteConfig.stats.projects, prefix: "+", label: "Patrimoines pris en charge" },
-  { value: siteConfig.stats.years, label: "Ans d'expertise" },
+  { value: siteConfig.stats.apartments, prefix: "+", label: "Espaces entretenus" },
+  { value: siteConfig.stats.clients, prefix: "+", label: "Clients satisfaits" },
+  { value: siteConfig.stats.projects, prefix: "+", label: "Interventions réalisées" },
+  { value: siteConfig.stats.years, label: "Ans d'expérience" },
 ];
 
 function Counter({ value }: { value: number }) {

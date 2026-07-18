@@ -54,9 +54,8 @@ export function Footer() {
               </span>
             </span>
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-secondary/75">
-              Protection de patrimoine immobilier à Paris. Nous préservons la
-              valeur, la réputation et la tranquillité de vos biens en
-              Île-de-France.
+              Nettoyage professionnel à Paris. Appartements, bureaux, Airbnb et
+              fins de chantier — une équipe soignée et réactive.
             </p>
             <div className="mt-6 flex gap-3">
               {[

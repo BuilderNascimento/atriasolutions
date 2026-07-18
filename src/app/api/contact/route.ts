@@ -21,7 +21,15 @@ export async function POST(request: Request) {
 
     // TODO: intégrer l'envoi d'e-mail (ex. Resend) avec les données `body`.
     // Pour l'instant, on journalise côté serveur.
-    console.info("[contact] nouvelle demande:", body);
+    console.info("[contact] nouvelle demande:", {
+      name: body.name,
+      email: body.email,
+      phone: body.phone,
+      address: body.address,
+      service: body.service,
+      preferredDate: body.preferredDate,
+      message: body.message,
+    });
 
     return NextResponse.json({ ok: true });
   } catch {

@@ -21,19 +21,19 @@ export function ProtectionManifesto() {
 
         <Reveal delay={0.12}>
           <p className="mt-8 max-w-2xl text-base leading-relaxed text-secondary/80 sm:text-lg">
-            {siteConfig.brand.valueProposition} Chaque intervention est pensée
-            pour préserver la valeur, la réputation et la tranquillité de vos
-            propriétaires — bien au-delà d&apos;un simple ménage.
+            {siteConfig.brand.valueProposition} Chaque passage est pensé pour
+            vous offrir un intérieur propre, agréable et prêt à vivre —
+            sans stress, sans surprise.
           </p>
         </Reveal>
 
         <Reveal delay={0.2}>
           <div className="mt-12 flex flex-wrap gap-x-10 gap-y-4 border-t border-white/10 pt-10 text-sm text-secondary/70">
-            <span>Valeur préservée</span>
+            <span>Propreté soignée</span>
             <span className="hidden sm:inline text-white/20">·</span>
-            <span>Réputation protégée</span>
+            <span>Équipe fiable</span>
             <span className="hidden sm:inline text-white/20">·</span>
-            <span>Tranquillité garantie</span>
+            <span>Assuré RC Pro</span>
           </div>
         </Reveal>
       </div>

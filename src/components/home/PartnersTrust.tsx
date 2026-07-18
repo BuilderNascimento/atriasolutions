@@ -63,11 +63,11 @@ export function PartnersTrust() {
           <div className="mx-auto max-w-2xl text-center">
             <span className="mx-auto mb-8 block h-px w-14 bg-primary/12" />
             <h2 className="font-heading text-2xl font-bold text-primary sm:text-3xl lg:text-[2rem]">
-              Ils nous confient leurs biens.
+              Ils nous font confiance.
             </h2>
             <p className="mt-5 text-sm leading-relaxed text-muted sm:text-base">
-              Plateformes, agences et professionnels de l&apos;immobilier nous
-              confient la protection de leurs patrimoines parisiens.
+              Plateformes, agences et professionnels de l&apos;immobilier
+              s&apos;appuient sur Atria pour le ménage de leurs logements parisiens.
             </p>
           </div>
         </Reveal>

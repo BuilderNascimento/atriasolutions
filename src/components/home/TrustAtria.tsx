@@ -3,6 +3,7 @@
 import { Reveal } from "@/components/ui/Reveal";
 import { ButtonLink } from "@/components/ui/Button";
 import { trustPillars } from "@/lib/content";
+import { siteConfig } from "@/lib/site";
 
 export function TrustAtria() {
   return (
@@ -12,7 +13,7 @@ export function TrustAtria() {
           <div className="mx-auto max-w-3xl text-center">
             <span className="mx-auto mb-8 block h-px w-16 bg-primary/20" />
             <h2 className="font-heading text-2xl font-bold leading-snug text-primary sm:text-3xl lg:text-[2rem] text-balance">
-              Pourquoi confier la protection de votre bien à Atria&nbsp;?
+              Pourquoi confier votre ménage à Atria&nbsp;?
             </h2>
           </div>
         </Reveal>
@@ -42,12 +43,8 @@ export function TrustAtria() {
 
         <Reveal delay={0.15}>
           <div className="mt-16 flex justify-center">
-            <ButtonLink
-              href="/devis"
-              variant="secondary"
-              className="!rounded-none !border-primary/20 !px-10 !py-4 !text-xs !font-semibold !uppercase !tracking-[0.2em] !text-primary hover:!border-primary hover:!bg-primary hover:!text-white"
-            >
-              Prendre rendez-vous
+            <ButtonLink href="/devis" variant="accent">
+              {siteConfig.brand.ctaPrimary}
             </ButtonLink>
           </div>
         </Reveal>

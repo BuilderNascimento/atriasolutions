@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import { ArrowRight, Star, ShieldCheck, Gem } from "lucide-react";
+import { ArrowRight, Star, ShieldCheck, Sparkles } from "lucide-react";
 import { ButtonLink } from "@/components/ui/Button";
 import { siteConfig } from "@/lib/site";
 
@@ -27,7 +27,7 @@ export function Hero() {
       <motion.div style={{ y, scale }} className="absolute inset-0">
         <Image
           src="https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=2400&q=80"
-          alt="Appartement de luxe lumineux à Paris"
+          alt="Intérieur d'appartement lumineux et soigné à Paris"
           fill
           priority
           sizes="100vw"
@@ -50,7 +50,7 @@ export function Hero() {
             className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-4 py-1.5 text-xs font-medium text-white/85 backdrop-blur-sm"
           >
             <span className="flex h-1.5 w-1.5 rounded-full bg-accent-400" />
-            Paris · Île-de-France
+            Paris · Tous arrondissements
           </motion.span>
 
           <motion.h1
@@ -59,7 +59,7 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.1, ease }}
             className="mt-6 text-4xl font-bold leading-[1.05] text-white text-balance sm:text-5xl lg:text-6xl xl:text-7xl"
           >
-            Nous protégeons votre patrimoine.
+            Un ménage soigné, digne de Paris.
           </motion.h1>
 
           <motion.p
@@ -68,8 +68,8 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.2, ease }}
             className="mt-6 max-w-xl text-lg leading-relaxed text-secondary/90 sm:text-xl"
           >
-            Pas un simple ménage. Une protection de vos biens à Paris —
-            appartements, résidences et espaces professionnels.
+            Appartements, maisons, bureaux et logements Airbnb —
+            une équipe professionnelle pour des espaces propres et accueillants.
           </motion.p>
 
           <motion.div
@@ -103,15 +103,15 @@ export function Hero() {
                   <Star key={i} className="h-4 w-4 fill-current" />
                 ))}
               </span>
-              <span>+{siteConfig.stats.clients} propriétaires qui nous font confiance</span>
+              <span>+{siteConfig.stats.clients} clients satisfaits</span>
             </span>
             <span className="inline-flex items-center gap-2">
-              <Gem className="h-4.5 w-4.5 text-accent-400" strokeWidth={1.75} />
-              Patrimoine protégé
+              <Sparkles className="h-4.5 w-4.5 text-accent-400" strokeWidth={1.75} />
+              Résultat soigné
             </span>
             <span className="inline-flex items-center gap-2">
               <ShieldCheck className="h-4.5 w-4.5 text-accent-400" strokeWidth={1.75} />
-              Société assurée
+              Société assurée · RC Pro
             </span>
           </motion.div>
         </div>

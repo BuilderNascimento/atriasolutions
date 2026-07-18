@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Clock, ShieldCheck, Gem, PhoneCall } from "lucide-react";
+import { Clock, ShieldCheck, Sparkles, PhoneCall } from "lucide-react";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { Reveal } from "@/components/ui/Reveal";
 import { ContactForm } from "@/components/contact/ContactForm";
@@ -7,9 +7,9 @@ import { BreadcrumbSchema } from "@/components/seo/JsonLd";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Protéger mon bien",
+  title: "Demander un devis",
   description:
-    "Évaluez gratuitement la protection de votre patrimoine à Paris. Plan sur mesure, sans engagement, réponse sous 24 h ouvrées.",
+    "Demandez un devis gratuit de nettoyage à Paris. Proposition claire sous 24 h ouvrées, sans engagement.",
   alternates: { canonical: "/devis" },
 };
 
@@ -17,17 +17,17 @@ const reassurances = [
   {
     icon: Clock,
     title: "Réponse rapide",
-    text: "Un plan de protection clair sous 24 h ouvrées.",
+    text: "Un devis clair sous 24 h ouvrées.",
   },
   {
-    icon: Gem,
+    icon: Sparkles,
     title: "Sur mesure",
-    text: "Chaque bien est unique — notre proposition l'est aussi.",
+    text: "Chaque espace est unique — notre proposition l'est aussi.",
   },
   {
     icon: ShieldCheck,
     title: "Sans engagement",
-    text: "Évaluation gratuite, transparente et sans surprise.",
+    text: "Devis gratuit, transparent et sans surprise.",
   },
 ];
 
@@ -41,9 +41,9 @@ export default function DevisPage() {
         ]}
       />
       <PageHeader
-        eyebrow="Évaluation gratuite"
-        title="Protégeons votre patrimoine ensemble"
-        description="Décrivez votre bien en quelques secondes. Nous vous proposons un plan de protection adapté — clair, rapide, sans engagement."
+        eyebrow="Devis gratuit"
+        title="Obtenez votre devis en quelques minutes"
+        description="Décrivez votre besoin. Nous vous envoyons une proposition claire et adaptée — rapide, sans engagement."
         breadcrumbs={[
           { name: "Accueil", href: "/" },
           { name: "Devis", href: "/devis" },
@@ -55,12 +55,12 @@ export default function DevisPage() {
           <div className="lg:col-span-5">
             <Reveal>
               <h2 className="text-2xl font-bold text-primary sm:text-3xl">
-                Pourquoi faire évaluer votre bien&nbsp;?
+                Pourquoi demander un devis&nbsp;?
               </h2>
               <p className="mt-4 leading-relaxed text-muted">
-                Un appartement parisien représente un investissement considérable.
-                Une évaluation nous permet de comprendre comment mieux protéger
-                sa valeur, sa réputation et votre tranquillité.
+                Surface, type de prestation, fréquence : chaque demande est
+                différente. Un devis nous permet de vous proposer le bon
+                service au bon tarif — pour un résultat soigné à Paris.
               </p>
             </Reveal>
 
@@ -83,23 +83,20 @@ export default function DevisPage() {
               })}
             </div>
 
-            <Reveal delay={0.2}>
+            <Reveal delay={0.3}>
               <a
                 href={siteConfig.contact.phoneHref}
-                className="mt-8 inline-flex items-center gap-3 rounded-sm bg-primary p-5 text-white shadow-soft transition-transform hover:-translate-y-0.5"
+                className="mt-8 inline-flex min-h-11 items-center gap-2 text-sm font-medium text-primary hover:text-accent"
               >
-                <PhoneCall className="h-5 w-5 text-accent-400" strokeWidth={1.75} />
-                <span>
-                  <span className="block text-xs text-secondary/70">Préférez-vous appeler ?</span>
-                  <span className="font-bold">{siteConfig.contact.phone}</span>
-                </span>
+                <PhoneCall className="h-4 w-4" strokeWidth={1.75} />
+                Ou appelez-nous : {siteConfig.contact.phone}
               </a>
             </Reveal>
           </div>
 
           <div className="lg:col-span-7">
-            <Reveal delay={0.1}>
-              <div className="rounded-sm border border-secondary/70 bg-white p-6 shadow-card sm:p-8">
+            <Reveal>
+              <div className="rounded-2xl border border-secondary/70 bg-white p-6 shadow-card sm:p-8">
                 <ContactForm />
               </div>
             </Reveal>

@@ -21,6 +21,7 @@ import {
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Stagger, staggerItem } from "@/components/ui/Reveal";
 import { ButtonLink } from "@/components/ui/Button";
+import { siteConfig } from "@/lib/site";
 
 type TurnoverCard = {
   icon: LucideIcon;
@@ -87,12 +88,18 @@ const cards: TurnoverCard[] = [
       "Demande de prise en charge auprès de la plateforme concernée (ex : AirCover sur Airbnb)",
     ],
     outro:
-      "Notre objectif est de protéger votre logement et défendre vos intérêts, tout en limitant les démarches.",
+      "Notre objectif est de vous simplifier la vie et de défendre vos intérêts, tout en limitant les démarches de votre côté.",
   },
 ];
 
-function TurnoverCardItem({ card }: { card: TurnoverCard }) {
-  const [open, setOpen] = useState(false);
+function TurnoverCardItem({
+  card,
+  defaultOpen,
+}: {
+  card: TurnoverCard;
+  defaultOpen: boolean;
+}) {
+  const [open, setOpen] = useState(defaultOpen);
   const Icon = card.icon;
 
   return (
@@ -103,7 +110,7 @@ function TurnoverCardItem({ card }: { card: TurnoverCard }) {
       <div className="relative aspect-[4/3] overflow-hidden">
         <Image
           src={card.image}
-          alt={card.title}
+          alt={`${card.title} — Atria Solutions Paris`}
           fill
           loading="lazy"
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -120,21 +127,6 @@ function TurnoverCardItem({ card }: { card: TurnoverCard }) {
           {card.title}
         </h3>
         <p className="mt-3 text-sm leading-relaxed text-muted">{card.intro}</p>
-
-        <button
-          type="button"
-          onClick={() => setOpen((v) => !v)}
-          aria-expanded={open}
-          className="mt-4 inline-flex items-center gap-1.5 self-start border-b border-accent/40 pb-0.5 text-sm font-semibold text-accent transition-colors hover:border-accent"
-        >
-          {open ? "Réduire" : "Lire plus"}
-          <ChevronDown
-            className={`h-4 w-4 transition-transform duration-300 ${
-              open ? "rotate-180" : ""
-            }`}
-            strokeWidth={2}
-          />
-        </button>
 
         <AnimatePresence initial={false}>
           {open && (
@@ -159,6 +151,21 @@ function TurnoverCardItem({ card }: { card: TurnoverCard }) {
             </motion.div>
           )}
         </AnimatePresence>
+
+        <button
+          type="button"
+          onClick={() => setOpen((v) => !v)}
+          aria-expanded={open}
+          className="mt-4 inline-flex min-h-11 items-center gap-1.5 self-start border-b border-accent/40 pb-0.5 text-sm font-semibold text-accent transition-colors hover:border-accent"
+        >
+          {open ? "Réduire" : "Voir le détail"}
+          <ChevronDown
+            className={`h-4 w-4 transition-transform duration-300 ${
+              open ? "rotate-180" : ""
+            }`}
+            strokeWidth={2}
+          />
+        </button>
       </div>
     </motion.article>
   );
@@ -169,23 +176,27 @@ export function AirbnbTurnover() {
     <section id="airbnb" className="relative bg-white py-24 lg:py-32">
       <div className="container-x">
         <SectionHeading
-          eyebrow="Protection locative"
-          title="Nous protégeons vos biens entre chaque séjour"
-          description="Vérification, entretien aux standards des plateformes, remise en état et gestion des dégradations — votre patrimoine locatif, toujours valorisé."
+          eyebrow="Location courte durée"
+          title="Nous préparons vos logements entre chaque séjour"
+          description="Vérification, ménage aux standards des plateformes, remise en état et suivi des dégradations — pour que chaque arrivée soit impeccable."
         />
 
         <Stagger
           stagger={0.1}
           className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4"
         >
-          {cards.map((card) => (
-            <TurnoverCardItem key={card.title} card={card} />
+          {cards.map((card, i) => (
+            <TurnoverCardItem
+              key={card.title}
+              card={card}
+              defaultOpen={i === 0}
+            />
           ))}
         </Stagger>
 
         <div className="mt-14 flex justify-center">
           <ButtonLink href="/devis" variant="accent">
-            Protéger mon bien locatif
+            {siteConfig.brand.ctaPrimary}
           </ButtonLink>
         </div>
       </div>

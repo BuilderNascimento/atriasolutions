@@ -17,8 +17,8 @@ export function Services() {
           <SectionHeading
             align="left"
             eyebrow="Nos expertises"
-            title="Chaque bien mérite une protection sur mesure"
-            description="Nous adaptons notre protocole à chaque patrimoine — appartement, résidence, bureau ou local professionnel."
+            title="Des services adaptés à chaque espace"
+            description="Appartement, maison, bureau ou logement locatif — nous adaptons notre ménage à vos besoins."
           />
           <ButtonLink href="/services" variant="primary" size="md" className="shrink-0">
             Tous les services
@@ -41,7 +41,7 @@ export function Services() {
                   <div className="relative aspect-[16/10] overflow-hidden">
                     <Image
                       src={service.image}
-                      alt={service.title}
+                      alt={`${service.title} — Atria Solutions Paris`}
                       fill
                       loading="lazy"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"

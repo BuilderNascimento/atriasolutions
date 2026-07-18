@@ -35,7 +35,6 @@ export function OrganizationSchema() {
         },
         areaServed: [
           { "@type": "City", name: "Paris" },
-          { "@type": "AdministrativeArea", name: "Île-de-France" },
         ],
         geo: {
           "@type": "GeoCoordinates",
