@@ -1,17 +1,18 @@
 "use client";
 
 import { Reveal } from "@/components/ui/Reveal";
+import { Marquee } from "@/components/ui/Marquee";
 import { partnerTypes } from "@/lib/content";
 
 function AirbnbMark() {
   return (
-    <svg viewBox="0 0 110 32" className="h-9 w-auto sm:h-11" aria-hidden="true">
+    <svg viewBox="0 0 110 32" className="h-7 w-auto sm:h-8" aria-hidden="true">
       <text
         x="0"
-        y="26"
+        y="24"
         fill="currentColor"
         fontFamily="var(--font-montserrat), system-ui, sans-serif"
-        fontSize="30"
+        fontSize="28"
         fontWeight="800"
         letterSpacing="-0.04em"
       >
@@ -23,13 +24,13 @@ function AirbnbMark() {
 
 function BookingMark() {
   return (
-    <svg viewBox="0 0 130 32" className="h-8 w-auto sm:h-10" aria-hidden="true">
+    <svg viewBox="0 0 130 32" className="h-6 w-auto sm:h-7" aria-hidden="true">
       <text
         x="0"
-        y="24"
+        y="23"
         fill="currentColor"
         fontFamily="var(--font-montserrat), system-ui, sans-serif"
-        fontSize="26"
+        fontSize="24"
         fontWeight="700"
       >
         Booking
@@ -40,13 +41,13 @@ function BookingMark() {
 
 function AbritelMark() {
   return (
-    <svg viewBox="0 0 110 32" className="h-8 w-auto sm:h-10" aria-hidden="true">
+    <svg viewBox="0 0 110 32" className="h-6 w-auto sm:h-7" aria-hidden="true">
       <text
         x="0"
-        y="24"
+        y="23"
         fill="currentColor"
         fontFamily="var(--font-montserrat), system-ui, sans-serif"
-        fontSize="26"
+        fontSize="24"
         fontWeight="700"
       >
         Abritel
@@ -55,55 +56,90 @@ function AbritelMark() {
   );
 }
 
-export function PartnersTrust() {
+function PartnerLogo({
+  name,
+  logo,
+}: {
+  name: string;
+  logo: (typeof partnerTypes)[number]["logo"];
+}) {
+  const brandColor =
+    logo === "airbnb"
+      ? "group-hover/card:text-[#FF5A5F]"
+      : logo === "booking"
+        ? "group-hover/card:text-[#003580]"
+        : logo === "abritel"
+          ? "group-hover/card:text-accent"
+          : "group-hover/card:text-primary";
+
   return (
-    <section className="border-y border-secondary/50 bg-white py-24 lg:py-32">
+    <div
+      className="group/card flex h-16 min-w-[10.5rem] items-center justify-center rounded-xl border border-secondary/80 bg-white px-6 shadow-soft transition-all duration-300 hover:-translate-y-0.5 hover:border-accent/30 hover:shadow-card sm:h-[4.5rem] sm:min-w-[12rem] sm:px-8"
+      aria-label={name}
+    >
+      <div
+        className={`text-primary/35 transition-colors duration-300 ${brandColor}`}
+      >
+        {logo === "airbnb" && <AirbnbMark />}
+        {logo === "booking" && <BookingMark />}
+        {logo === "abritel" && <AbritelMark />}
+        {logo === "text" && (
+          <span className="font-heading text-sm font-bold tracking-tight sm:text-base">
+            {name}
+          </span>
+        )}
+      </div>
+    </div>
+  );
+}
+
+export function PartnersTrust() {
+  const rowA = partnerTypes;
+  const rowB = [...partnerTypes].reverse();
+
+  return (
+    <section className="relative overflow-hidden border-y border-secondary/50 bg-secondary-100/40 py-16 lg:py-20">
       <div className="container-x">
         <Reveal>
           <div className="mx-auto max-w-2xl text-center">
-            <span className="mx-auto mb-8 block h-px w-14 bg-primary/12" />
-            <h2 className="font-heading text-2xl font-bold text-primary sm:text-3xl lg:text-[2rem]">
-              Ils nous font confiance.
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
+              Partenaires
+            </p>
+            <h2 className="mt-3 font-heading text-2xl font-bold text-primary sm:text-3xl">
+              Ils nous font confiance
             </h2>
-            <p className="mt-5 text-sm leading-relaxed text-muted sm:text-base">
+            <p className="mt-3 text-sm leading-relaxed text-muted sm:text-base">
               Plateformes, agences et professionnels de l&apos;immobilier
-              s&apos;appuient sur Atria pour le ménage de leurs logements parisiens.
+              s&apos;appuient sur Atria pour le ménage de leurs logements à Paris.
             </p>
           </div>
         </Reveal>
+      </div>
 
-        <Reveal delay={0.1}>
-          <div className="mt-16 grid grid-cols-2 items-center gap-x-6 gap-y-14 sm:grid-cols-3 lg:grid-cols-6 lg:gap-y-12">
-            {partnerTypes.map((partner) => (
-              <div
-                key={partner.name}
-                className="group flex flex-col items-center justify-center text-center"
-                aria-label={partner.name}
-              >
-                <div
-                  className={`transition-colors duration-500 ${
-                    partner.logo === "airbnb"
-                      ? "text-primary/20 group-hover:text-[#FF5A5F]"
-                      : partner.logo === "booking"
-                        ? "text-primary/20 group-hover:text-[#003580]"
-                        : partner.logo === "abritel"
-                          ? "text-primary/20 group-hover:text-accent"
-                          : "text-primary/20 group-hover:text-primary/45"
-                  }`}
-                >
-                  {partner.logo === "airbnb" && <AirbnbMark />}
-                  {partner.logo === "booking" && <BookingMark />}
-                  {partner.logo === "abritel" && <AbritelMark />}
-                  {partner.logo === "text" && (
-                    <span className="font-heading text-lg font-bold leading-tight tracking-tight sm:text-xl lg:text-[1.35rem]">
-                      {partner.name}
-                    </span>
-                  )}
-                </div>
-              </div>
-            ))}
-          </div>
-        </Reveal>
+      <div className="relative mt-10">
+        {/* Gradientes laterais (estilo logo cloud shadcn) */}
+        <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-secondary-100/90 to-transparent sm:w-24" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16 bg-gradient-to-l from-secondary-100/90 to-transparent sm:w-24" />
+
+        <Marquee pauseOnHover className="[--duration:38s]">
+          {rowA.map((partner) => (
+            <PartnerLogo
+              key={`a-${partner.name}`}
+              name={partner.name}
+              logo={partner.logo}
+            />
+          ))}
+        </Marquee>
+
+        <Marquee reverse pauseOnHover className="mt-4 [--duration:42s]">
+          {rowB.map((partner) => (
+            <PartnerLogo
+              key={`b-${partner.name}`}
+              name={partner.name}
+              logo={partner.logo}
+            />
+          ))}
+        </Marquee>
       </div>
     </section>
   );
