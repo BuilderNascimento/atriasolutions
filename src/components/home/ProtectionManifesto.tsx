@@ -21,18 +21,17 @@ export function ProtectionManifesto() {
 
         <Reveal delay={0.12}>
           <p className="mt-8 max-w-2xl text-base leading-relaxed text-secondary/80 sm:text-lg">
-            {siteConfig.brand.valueProposition} Chaque passage est pensé pour
-            vous offrir un intérieur propre, agréable et prêt à vivre —
-            sans stress, sans surprise.
+            {siteConfig.brand.valueProposition} Chaque passage vise un intérieur
+            propre, agréable et prêt à vivre, sans stress ni surprise.
           </p>
         </Reveal>
 
         <Reveal delay={0.2}>
           <div className="mt-12 flex flex-wrap gap-x-10 gap-y-4 border-t border-white/10 pt-10 text-sm text-secondary/70">
             <span>Propreté soignée</span>
-            <span className="hidden sm:inline text-white/20">·</span>
+            <span className="hidden text-white/20 sm:inline">/</span>
             <span>Équipe fiable</span>
-            <span className="hidden sm:inline text-white/20">·</span>
+            <span className="hidden text-white/20 sm:inline">/</span>
             <span>Réponse sous 24 h</span>
           </div>
         </Reveal>

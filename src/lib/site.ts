@@ -1,7 +1,5 @@
 /**
  * Configuration centrale du site Atria Solutions.
- * Modifiez ces valeurs pour mettre à jour les coordonnées, liens et informations
- * partout sur le site en une seule fois.
  */
 
 export const siteConfig = {
@@ -9,7 +7,7 @@ export const siteConfig = {
   legalName: "Atria Solutions SAS",
   tagline: "Nettoyage professionnel à Paris",
   description:
-    "Atria Solutions — entreprise de nettoyage professionnel à Paris et proche couronne. Appartements, maisons, bureaux, Airbnb et fins de chantier. Une équipe soignée et réactive.",
+    "Atria Solutions, entreprise de nettoyage à Paris et en proche couronne. Appartements, maisons, bureaux, Airbnb et fins de chantier. Une équipe soignée et réactive.",
   url: "https://www.atriasolutionsparis.com",
   locale: "fr_FR",
   contact: {
@@ -23,7 +21,7 @@ export const siteConfig = {
     postalCode: "75002",
     city: "Paris",
     country: "France",
-    hours: "Lun – Sam · 8h00 – 20h00",
+    hours: "Lun-Sam, 8h-20h",
   },
   social: {
     instagram: "https://instagram.com",
@@ -34,15 +32,14 @@ export const siteConfig = {
     years: 5,
     clients: 1200,
     apartments: 650,
-    /** ~3 ans × 5/j + 1 an × 9/j (365 j) ≈ 8 760 */
     projects: 8700,
   },
   brand: {
-    promise: "Un ménage soigné, digne de Paris.",
+    promise: "Un ménage soigné, à Paris.",
     manifestoLine1: "Nous nettoyons avec soin.",
     manifestoLine2: "Pour que votre espace soit toujours accueillant.",
     valueProposition:
-      "Propriétaires, hôtes Airbnb et professionnels : nous prenons soin de vos espaces avec exigence, discrétion et un vrai sens du détail.",
+      "Propriétaires, hôtes Airbnb ou professionnels : on s'occupe de vos espaces avec exigence, discrétion et attention aux détails.",
     ctaPrimary: "Demander un devis",
     ctaSecondary: "Nous contacter",
   },

@@ -22,12 +22,12 @@ const reassurances = [
   {
     icon: Sparkles,
     title: "Sur mesure",
-    text: "Chaque espace est unique — notre proposition l'est aussi.",
+    text: "Chaque espace est unique, notre proposition aussi.",
   },
   {
     icon: ShieldCheck,
     title: "Sans engagement",
-    text: "Devis gratuit, transparent et sans surprise.",
+    text: "Devis gratuit, transparent, sans surprise.",
   },
 ];
 
@@ -43,7 +43,7 @@ export default function DevisPage() {
       <PageHeader
         eyebrow="Devis gratuit"
         title="Obtenez votre devis en quelques minutes"
-        description="Décrivez votre besoin. Nous vous envoyons une proposition claire et adaptée — rapide, sans engagement."
+        description="Décrivez votre besoin. On vous envoie une proposition claire et adaptée, rapidement et sans engagement."
         breadcrumbs={[
           { name: "Accueil", href: "/" },
           { name: "Devis", href: "/devis" },
@@ -59,8 +59,8 @@ export default function DevisPage() {
               </h2>
               <p className="mt-4 leading-relaxed text-muted">
                 Surface, type de prestation, fréquence : chaque demande est
-                différente. Un devis nous permet de vous proposer le bon
-                service au bon tarif — pour un résultat soigné à Paris.
+                différente. Un devis permet de vous proposer le bon
+                service au bon tarif, pour un résultat soigné à Paris.
               </p>
             </Reveal>
 

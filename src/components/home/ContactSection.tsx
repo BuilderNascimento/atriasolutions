@@ -26,7 +26,7 @@ export function ContactSection() {
         <SectionHeading
           eyebrow="Contact"
           title="Parlons de votre projet de nettoyage"
-          description="Décrivez votre besoin — nous vous répondons sous 24 h ouvrées avec un devis clair et sans engagement."
+          description="Décrivez votre besoin. On vous répond sous 24 h ouvrées avec un devis clair, sans engagement."
         />
 
         <div className="mt-16 grid gap-8 lg:grid-cols-12 lg:gap-10">

@@ -27,7 +27,7 @@ export default function ServicesPage() {
       <PageHeader
         eyebrow="Nos services"
         title="Des prestations adaptées à chaque espace"
-        description="Appartement, maison, bureau ou logement Airbnb — nous adaptons notre ménage à vos besoins à Paris."
+        description="Appartement, maison, bureau ou logement Airbnb : on adapte le ménage à vos besoins à Paris."
         breadcrumbs={[
           { name: "Accueil", href: "/" },
           { name: "Services", href: "/services" },
@@ -56,7 +56,7 @@ export default function ServicesPage() {
                     <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-card">
                       <Image
                         src={service.image}
-                        alt={`${service.title} — Atria Solutions Paris`}
+                        alt={`${service.title}, Atria Solutions Paris`}
                         fill
                         loading="lazy"
                         sizes="(max-width: 1024px) 100vw, 50vw"
@@ -106,7 +106,7 @@ export default function ServicesPage() {
               Un projet de nettoyage ? Parlons-en.
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-secondary/85">
-              Décrivez votre besoin et recevez un devis clair, rapidement —
+              Décrivez votre besoin et recevez un devis clair, rapidement,
               sans engagement.
             </p>
           </Reveal>

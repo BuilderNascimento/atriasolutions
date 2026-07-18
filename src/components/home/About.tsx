@@ -25,7 +25,7 @@ export function About() {
               <div className="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-card">
                 <Image
                   src={ABOUT_IMAGE}
-                  alt="Professionnelle Atria Solutions en uniforme — nettoyage soigné d'un appartement parisien"
+                  alt="Professionnelle Atria Solutions en uniforme, nettoyage d'un appartement parisien"
                   fill
                   loading="lazy"
                   sizes="(max-width: 1024px) 100vw, 50vw"

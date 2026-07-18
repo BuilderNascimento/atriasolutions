@@ -9,7 +9,7 @@ import { siteConfig } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Contactez Atria Solutions pour un devis de nettoyage à Paris. Téléphone, e-mail, WhatsApp ou formulaire — réponse sous 24 h ouvrées.",
+    "Contactez Atria Solutions pour un devis de nettoyage à Paris. Téléphone, e-mail, WhatsApp ou formulaire. Réponse sous 24 h ouvrées.",
   alternates: { canonical: "/contact" },
 };
 

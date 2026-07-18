@@ -15,7 +15,7 @@ export function Pricing() {
         <SectionHeading
           eyebrow="Nos formules"
           title="Trois façons de travailler avec nous"
-          description="Choisissez le rythme qui vous convient. Nous adaptons chaque intervention à votre espace à Paris — devis gratuit et sans engagement."
+          description="Choisissez le rythme qui vous convient. On adapte chaque intervention à votre espace à Paris. Devis gratuit, sans engagement."
         />
 
         <Stagger
@@ -80,7 +80,7 @@ export function Pricing() {
         </Stagger>
 
         <p className="mt-10 text-center text-sm text-muted">
-          Devis gratuit · Sans engagement · Réponse sous 24&nbsp;h ouvrées
+          Devis gratuit, sans engagement. Réponse sous 24&nbsp;h ouvrées
         </p>
       </div>
     </section>

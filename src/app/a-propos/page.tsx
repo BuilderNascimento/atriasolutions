@@ -14,7 +14,7 @@ import { siteConfig } from "@/lib/site";
 export const metadata: Metadata = {
   title: "À propos",
   description:
-    "Atria Solutions — entreprise de nettoyage professionnel à Paris. Une équipe soignée et réactive pour appartements, bureaux et logements Airbnb.",
+    "Atria Solutions, entreprise de nettoyage à Paris. Une équipe soignée et réactive pour appartements, bureaux et logements Airbnb.",
   alternates: { canonical: "/a-propos" },
 };
 
@@ -23,25 +23,25 @@ const values = [
     icon: Sparkles,
     title: "Exigence",
     description:
-      "Les détails font la différence. Nous soignons chaque coin, chaque surface, chaque finition.",
+      "Les détails font la différence. On soigne chaque coin, chaque surface, chaque finition.",
   },
   {
     icon: Clock,
     title: "Ponctualité",
     description:
-      "Nous arrivons à l'heure, respectons les créneaux convenus et tenons nos engagements.",
+      "On arrive à l'heure, on respecte les créneaux convenus et on tient nos engagements.",
   },
   {
     icon: Leaf,
     title: "Respect",
     description:
-      "Produits adaptés, surfaces préservées, espaces traités avec soin — comme s'ils étaient les nôtres.",
+      "Produits adaptés, surfaces préservées, espaces traités avec soin, comme s'ils étaient les nôtres.",
   },
   {
     icon: HeartHandshake,
     title: "Confiance",
     description:
-      "Votre tranquillité compte. Nous construisons des relations durables, fondées sur la fiabilité.",
+      "Votre tranquillité compte. On construit des relations durables, fondées sur la fiabilité.",
   },
 ];
 
@@ -75,7 +75,7 @@ export default function AboutPage() {
       <PageHeader
         eyebrow="À propos d'Atria"
         title="Une entreprise de nettoyage à taille humaine, à Paris"
-        description="Atria Solutions est née d'une conviction simple : un espace propre, c'est un espace plus agréable à vivre — pour vous, vos voyageurs et vos clients."
+        description="Atria Solutions est née d'une idée simple : un espace propre, c'est un espace plus agréable à vivre, pour vous, vos voyageurs et vos clients."
         breadcrumbs={[
           { name: "Accueil", href: "/" },
           { name: "À propos", href: "/a-propos" },
@@ -88,7 +88,7 @@ export default function AboutPage() {
             <div className="relative aspect-[4/5] overflow-hidden rounded-sm shadow-card">
               <Image
                 src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?auto=format&fit=crop&w=1200&q=80"
-                alt="Équipe Atria Solutions — nettoyage professionnel à Paris"
+                alt="Équipe Atria Solutions, nettoyage professionnel à Paris"
                 fill
                 loading="lazy"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -101,17 +101,17 @@ export default function AboutPage() {
               align="left"
               eyebrow="Notre mission"
               title="Prendre soin de vos espaces, au quotidien"
-              description="Nous accompagnons propriétaires, hôtes Airbnb, gestionnaires, agences et hôtels avec une promesse claire : un ménage soigné, fiable et adapté à Paris."
+              description="On accompagne propriétaires, hôtes Airbnb, gestionnaires, agences et hôtels avec une promesse claire : un ménage soigné, fiable et adapté à Paris."
             />
             <div className="mt-6 space-y-4 text-base leading-relaxed text-muted">
               <p>
                 Que ce soit pour un appartement, des bureaux ou une rotation
-                Airbnb, nous intervenons avec la même exigence : propreté,
+                Airbnb, on intervient avec la même exigence : propreté,
                 ponctualité et un vrai sens du détail.
               </p>
               <p>
                 Notre ambition : devenir une référence du nettoyage
-                professionnel à Paris — là où la qualité et la confiance ne
+                professionnel à Paris, là où la qualité et la confiance ne
                 sont pas des options, mais des exigences.
               </p>
             </div>

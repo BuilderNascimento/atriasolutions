@@ -47,7 +47,7 @@ export function Navbar() {
       <nav className="container-x flex items-center justify-between">
         <Link
           href="/"
-          aria-label={`${siteConfig.name} — accueil`}
+          aria-label={`${siteConfig.name}, accueil`}
           className="relative z-10"
         >
           <Logo dark={!transparent} />

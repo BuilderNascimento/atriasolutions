@@ -97,7 +97,7 @@ function TurnoverCardItem({
       <div className="relative aspect-[16/10] overflow-hidden">
         <Image
           src={card.image}
-          alt={`${card.title} — Atria Solutions Paris`}
+          alt={`${card.title}, Atria Solutions Paris`}
           fill
           loading="lazy"
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
@@ -165,7 +165,7 @@ export function AirbnbTurnover() {
         <SectionHeading
           eyebrow="Location courte durée"
           title="Nous préparons vos logements entre chaque séjour"
-          description="Vérification, ménage aux standards des plateformes et suivi — pour que chaque arrivée soit impeccable."
+          description="Vérification, ménage aux standards des plateformes et suivi, pour que chaque arrivée soit impeccable."
         />
 
         <Stagger

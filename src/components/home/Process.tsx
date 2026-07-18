@@ -14,7 +14,7 @@ export function Process() {
           light
           eyebrow="Notre méthode"
           title="Cinq étapes, simples et claires"
-          description="De la première demande au contrôle final — un parcours fluide, sans mauvaise surprise."
+          description="De la première demande au contrôle final. Un parcours simple, sans mauvaise surprise."
         />
 
         <div className="relative mt-20">

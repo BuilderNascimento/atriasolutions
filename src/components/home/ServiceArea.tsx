@@ -17,7 +17,7 @@ export function ServiceArea() {
               align="left"
               eyebrow="Zone d'intervention"
               title="Paris et ses proches environs"
-              description="Tous les arrondissements de Paris, et les communes limitrophes juste autour — la proche couronne, pas plus loin. Réactifs, proches de vous."
+              description="Tous les arrondissements de Paris, et les communes juste autour (proche couronne). Pas plus loin. On reste proches de vous et réactifs."
             />
 
             <div className="mt-8 flex flex-wrap gap-2.5">
@@ -53,7 +53,7 @@ export function ServiceArea() {
           >
             <div className="aspect-[4/3] w-full">
               <iframe
-                title="Zone d'intervention Atria Solutions — Paris et proche couronne"
+                title="Zone d'intervention Atria Solutions, Paris et proche couronne"
                 src="https://www.openstreetmap.org/export/embed.html?bbox=2.20%2C48.79%2C2.48%2C48.94&layer=mapnik&marker=48.8566%2C2.3522"
                 className="h-full w-full grayscale-[35%] contrast-[1.05]"
                 loading="lazy"

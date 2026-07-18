@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 import { siteConfig } from "@/lib/site";
 
-export const alt = `${siteConfig.name} — ${siteConfig.tagline}`;
+export const alt = `${siteConfig.name} | ${siteConfig.tagline}`;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -56,7 +56,7 @@ export default async function OgImage() {
 
         <div style={{ display: "flex", flexDirection: "column" }}>
           <span style={{ color: "#34a870", fontSize: 24, fontWeight: 700, letterSpacing: 4 }}>
-            PARIS · TOUS ARRONDISSEMENTS
+            PARIS ET PROCHE COURONNE
           </span>
           <span
             style={{
@@ -68,10 +68,10 @@ export default async function OgImage() {
               maxWidth: 900,
             }}
           >
-            Un ménage soigné, digne de Paris.
+            Un ménage soigné, à Paris.
           </span>
           <span style={{ color: "rgba(217,222,229,0.85)", fontSize: 28, marginTop: 24 }}>
-            Propreté · Fiabilité · Discrétion · Paris
+            Propreté, fiabilité, discrétion
           </span>
         </div>
       </div>

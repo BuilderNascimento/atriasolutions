@@ -79,7 +79,7 @@ export const services: Service[] = [
     title: "Nettoyage de maison",
     short: "Toute la maison entretenue, pièce après pièce.",
     description:
-      "Maisons et hôtels particuliers confiés à une équipe dédiée. Nous adaptons notre travail à chaque surface et à chaque pièce — pour un intérieur propre et soigné.",
+      "Maisons et hôtels particuliers confiés à une équipe dédiée. On adapte le travail à chaque surface et à chaque pièce, pour un intérieur propre et soigné.",
     icon: Home,
     image: SERVICE_MAISON_IMAGE,
     features: [
@@ -92,9 +92,9 @@ export const services: Service[] = [
   {
     slug: "nettoyage-bureaux",
     title: "Nettoyage de bureaux",
-    short: "Des espaces de travail propres et agréables au quotidien.",
+    short: "Des bureaux propres et agréables, tous les jours.",
     description:
-      "Vos bureaux accueillent collaborateurs et clients. Nous assurons un entretien discret, régulier et soigné — pour un environnement professionnel et confortable.",
+      "Vos bureaux accueillent collaborateurs et clients. On assure un entretien discret, régulier et soigné, pour un environnement confortable au travail.",
     icon: Building2,
     image: SERVICE_BUREAUX_IMAGE,
     features: [
@@ -109,7 +109,7 @@ export const services: Service[] = [
     title: "Nettoyage de fin de chantier",
     short: "Un espace livré propre, prêt à être habité ou présenté.",
     description:
-      "Après vos travaux, nous enlevons poussières et résidus pour restituer un lieu impeccable — prêt pour l'emménagement, la visite ou la location.",
+      "Après vos travaux, on enlève poussières et résidus pour rendre un lieu propre, prêt pour l'emménagement, une visite ou la location.",
     icon: HardHat,
     image: SERVICE_FIN_CHANTIER_IMAGE,
     features: [
@@ -185,7 +185,7 @@ export const advantages: Advantage[] = [
   {
     title: "Contrôle qualité",
     description:
-      "Une inspection systématique après chaque intervention pour garantir un résultat irréprochable.",
+      "Après chaque intervention, on vérifie le résultat pour s'assurer que tout est bien fait.",
     icon: BadgeCheck,
   },
   {
@@ -213,7 +213,7 @@ export const processSteps: ProcessStep[] = [
     number: "02",
     title: "Devis",
     description:
-      "Nous vous envoyons une proposition claire et transparente, sans engagement — adaptée à votre espace.",
+      "On vous envoie une proposition claire, adaptée à votre espace, sans engagement.",
   },
   {
     number: "03",
@@ -256,16 +256,16 @@ export const testimonials: Testimonial[] = [
   },
   {
     name: "Julien Mercier",
-    location: "Property Manager · Paris 11e",
+    location: "Property Manager, Paris 11e",
     stayType: "40 logements gérés",
     quote:
-      "Une équipe fiable, un interlocuteur unique. La gestion de mes rotations est enfin sereine — qualité constante, ponctualité irréprochable, logements toujours prêts pour le prochain séjour.",
+      "Une équipe fiable, un interlocuteur unique. La gestion de mes rotations est enfin sereine : qualité constante, ponctualité, logements toujours prêts pour le prochain séjour.",
     highlight: "qualité constante",
     rating: 5,
   },
   {
     name: "Sophie Nguyen",
-    location: "Agence immobilière · Paris 16e",
+    location: "Agence immobilière, Paris 16e",
     stayType: "Fins de chantier",
     quote:
       "Des espaces livrés parfaitement propres, prêts à présenter aux acquéreurs. Un vrai gain de temps et une image soignée qui reflète notre exigence.",
@@ -274,7 +274,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     name: "Marc Dubois",
-    location: "Bureaux · Paris 8e",
+    location: "Bureaux, Paris 8e",
     stayType: "Entretien régulier",
     quote:
       "Discrétion, ponctualité et résultat irréprochable. Nos espaces sont toujours accueillants pour nos collaborateurs et nos clients.",
@@ -316,27 +316,27 @@ export const faqItems: FaqItem[] = [
   {
     question: "Dans quelles zones intervenez-vous ?",
     answer:
-      "Nous intervenons à Paris (tous les arrondissements) et dans les communes limitrophes de la proche couronne — Hauts-de-Seine, Seine-Saint-Denis et Val-de-Marne. Contactez-nous pour confirmer la disponibilité sur votre adresse.",
+      "On intervient à Paris (tous les arrondissements) et dans les communes juste autour : Hauts-de-Seine, Seine-Saint-Denis et Val-de-Marne. Appelez-nous pour vérifier votre adresse.",
   },
   {
     question: "Comment obtenir un devis ?",
     answer:
-      "Remplissez notre formulaire ou appelez-nous. Nous étudions votre besoin et vous envoyons un devis clair sous 24 h ouvrées, sans engagement.",
+      "Remplissez le formulaire ou appelez-nous. On regarde votre besoin et on vous renvoie un devis clair sous 24 h ouvrées, sans engagement.",
   },
   {
     question: "Proposez-vous le ménage Airbnb entre chaque séjour ?",
     answer:
-      "Oui. Nous assurons la vérification du logement, le ménage aux standards des plateformes, la préparation du linge et le suivi des éventuelles dégradations.",
+      "Oui. Vérification du logement, ménage aux standards des plateformes, préparation du linge et suivi des éventuelles dégradations.",
   },
   {
     question: "Peut-on planifier des interventions récurrentes ?",
     answer:
-      "Absolument. Nous proposons des plannings sur mesure : quotidien, hebdomadaire, mensuel ou à la demande, avec un interlocuteur dédié.",
+      "Oui. On propose des plannings sur mesure : quotidien, hebdomadaire, mensuel ou à la demande, avec un interlocuteur dédié.",
   },
   {
     question: "Comment sont calculés vos tarifs ?",
     answer:
-      "Chaque devis est personnalisé selon la surface, le type de prestation et la fréquence souhaitée. Contactez-nous pour une estimation claire et sans engagement.",
+      "Selon la surface, le type de prestation et la fréquence. Contactez-nous pour une estimation claire, sans engagement.",
   },
 ];
 
@@ -393,10 +393,10 @@ export type ServiceAreaZone = {
 
 /** Zone d'intervention : Paris + proches environs (petite couronne) */
 export const serviceAreas: ServiceAreaZone[] = [
-  { name: "Paris", code: "75001–75020" },
-  { name: "Boulogne · Neuilly · Levallois", code: "92" },
-  { name: "Issy · Vanves · Montrouge", code: "92" },
-  { name: "Vincennes · Saint-Mandé · Ivry", code: "94" },
-  { name: "Montreuil · Pantin · Les Lilas", code: "93" },
-  { name: "Saint-Denis · Aubervilliers", code: "93" },
+  { name: "Paris", code: "75001-75020" },
+  { name: "Boulogne, Neuilly, Levallois", code: "92" },
+  { name: "Issy, Vanves, Montrouge", code: "92" },
+  { name: "Vincennes, Saint-Mandé, Ivry", code: "94" },
+  { name: "Montreuil, Pantin, Les Lilas", code: "93" },
+  { name: "Saint-Denis, Aubervilliers", code: "93" },
 ];

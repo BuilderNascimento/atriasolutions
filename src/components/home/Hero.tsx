@@ -50,7 +50,7 @@ export function Hero() {
             className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-4 py-1.5 text-xs font-medium text-white/85 backdrop-blur-sm"
           >
             <span className="flex h-1.5 w-1.5 rounded-full bg-accent-400" />
-            Paris · Proche couronne
+            Paris et proche couronne
           </motion.span>
 
           <motion.h1
@@ -59,7 +59,7 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.1, ease }}
             className="mt-6 text-4xl font-bold leading-[1.05] text-white text-balance sm:text-5xl lg:text-6xl xl:text-7xl"
           >
-            Un ménage soigné, digne de Paris.
+            Un ménage soigné, à Paris.
           </motion.h1>
 
           <motion.p
@@ -68,8 +68,8 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.2, ease }}
             className="mt-6 max-w-xl text-lg leading-relaxed text-secondary/90 sm:text-xl"
           >
-            Appartements, maisons, bureaux et logements Airbnb —
-            une équipe professionnelle pour des espaces propres et accueillants.
+            Appartements, maisons, bureaux et logements Airbnb.
+            Une équipe professionnelle pour des espaces propres et accueillants.
           </motion.p>
 
           <motion.div
