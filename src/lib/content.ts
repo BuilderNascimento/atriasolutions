@@ -341,48 +341,52 @@ export const faqItems: FaqItem[] = [
   {
     question: "Comment sont calculés vos tarifs ?",
     answer:
-      "Les tarifs dépendent de la surface, du type de prestation et de la fréquence. Nous proposons des devis personnalisés — indicativement à partir d'environ 35 €/h ou forfaits selon le service. Contactez-nous pour une estimation précise.",
+      "Chaque devis est personnalisé selon la surface, le type de prestation et la fréquence souhaitée. Contactez-nous pour une estimation claire et sans engagement.",
   },
 ];
 
-export type PricingPackage = {
+export type ServiceFormula = {
   name: string;
-  priceHint: string;
+  subtitle: string;
   description: string;
   features: string[];
   highlighted?: boolean;
 };
 
-export const pricingPackages: PricingPackage[] = [
+/** Formules de service (sans prix affichés) */
+export const serviceFormulas: ServiceFormula[] = [
   {
     name: "Ponctuel",
-    priceHint: "À partir de 89 €",
-    description: "Idéal pour un grand ménage, un emménagement ou une visite.",
+    subtitle: "Une intervention à la demande",
+    description:
+      "Idéal pour un grand ménage, un emménagement, une visite ou une remise en ordre occasionnelle.",
     features: [
-      "Devis sous 24 h",
-      "Intervention sur créneau convenu",
-      "Contrôle qualité inclus",
+      "Créneau convenu avec vous",
+      "Ménage adapté à votre espace",
+      "Résultat soigné dès le premier passage",
     ],
   },
   {
     name: "Récurrent",
-    priceHint: "À partir de 75 € / passage",
-    description: "Entretien régulier de votre appartement ou de vos bureaux.",
+    subtitle: "Un entretien régulier",
+    description:
+      "Pour garder votre appartement ou vos bureaux propres toute l'année, sans y penser.",
     features: [
       "Planning hebdomadaire ou bi-mensuel",
-      "Tarif préférentiel",
+      "Équipe habituée à votre espace",
       "Interlocuteur dédié",
     ],
     highlighted: true,
   },
   {
     name: "Airbnb / Rotation",
-    priceHint: "Sur devis",
-    description: "Turnover complet entre chaque séjour, aux standards des plateformes.",
+    subtitle: "Entre chaque séjour",
+    description:
+      "Préparation complète du logement pour accueillir vos voyageurs dans les meilleures conditions.",
     features: [
-      "Vérification + ménage",
+      "Vérification et ménage",
       "Linge et consommables",
-      "Suivi des dégradations",
+      "Logement prêt pour l'arrivée",
     ],
   },
 ];
