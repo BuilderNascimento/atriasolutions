@@ -14,7 +14,7 @@ import { siteConfig } from "@/lib/site";
 export const metadata: Metadata = {
   title: "À propos",
   description:
-    "Atria Solutions — entreprise de nettoyage professionnel à Paris. Une équipe soignée, réactive et assurée pour appartements, bureaux et logements Airbnb.",
+    "Atria Solutions — entreprise de nettoyage professionnel à Paris. Une équipe soignée et réactive pour appartements, bureaux et logements Airbnb.",
   alternates: { canonical: "/a-propos" },
 };
 

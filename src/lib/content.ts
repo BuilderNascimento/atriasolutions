@@ -189,9 +189,9 @@ export const advantages: Advantage[] = [
     icon: BadgeCheck,
   },
   {
-    title: "Assuré",
+    title: "Discrétion",
     description:
-      "Société assurée en responsabilité civile professionnelle pour votre tranquillité.",
+      "Nous intervenons avec tact et respect, dans des espaces privés comme professionnels.",
     icon: Award,
   },
 ];
@@ -327,11 +327,6 @@ export const faqItems: FaqItem[] = [
     question: "Proposez-vous le ménage Airbnb entre chaque séjour ?",
     answer:
       "Oui. Nous assurons la vérification du logement, le ménage aux standards des plateformes, la préparation du linge et le suivi des éventuelles dégradations.",
-  },
-  {
-    question: "Êtes-vous assurés ?",
-    answer:
-      "Oui. Atria Solutions est assurée en responsabilité civile professionnelle. Chaque intervention est réalisée par une équipe formée et encadrée.",
   },
   {
     question: "Peut-on planifier des interventions récurrentes ?",

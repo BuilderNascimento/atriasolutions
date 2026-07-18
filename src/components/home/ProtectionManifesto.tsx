@@ -33,7 +33,7 @@ export function ProtectionManifesto() {
             <span className="hidden sm:inline text-white/20">·</span>
             <span>Équipe fiable</span>
             <span className="hidden sm:inline text-white/20">·</span>
-            <span>Assuré RC Pro</span>
+            <span>Réponse sous 24 h</span>
           </div>
         </Reveal>
       </div>

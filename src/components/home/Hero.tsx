@@ -111,7 +111,7 @@ export function Hero() {
             </span>
             <span className="inline-flex items-center gap-2">
               <ShieldCheck className="h-4.5 w-4.5 text-accent-400" strokeWidth={1.75} />
-              Société assurée · RC Pro
+              Équipe ponctuelle
             </span>
           </motion.div>
         </div>

@@ -12,7 +12,7 @@ const pillars = [
   "Équipe formée et en uniforme",
   "Résultat soigné à chaque passage",
   "Discrétion et ponctualité",
-  "Assuré en responsabilité civile",
+  "Interlocuteur dédié",
 ];
 
 export function About() {

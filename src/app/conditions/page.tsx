@@ -66,9 +66,8 @@ export default function TermsPage() {
           </p>
         </LegalBlock>
 
-        <LegalBlock title="6. Responsabilité et assurance">
+        <LegalBlock title="6. Responsabilité">
           <p>
-            {siteConfig.legalName} est assurée en responsabilité civile professionnelle.
             Notre responsabilité ne saurait être engagée en cas de force majeure ou de
             mauvaise utilisation des locaux par le client.
           </p>
