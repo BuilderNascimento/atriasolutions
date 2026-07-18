@@ -10,8 +10,7 @@ export const siteConfig = {
   tagline: "Nettoyage professionnel à Paris",
   description:
     "Atria Solutions — entreprise de nettoyage professionnel à Paris. Appartements, maisons, bureaux, Airbnb et fins de chantier. Une équipe soignée, réactive et assurée.",
-  // Remplacez par votre domaine réel (ex. www.atria-solutions.fr) une fois configuré
-  url: "https://atriasolutions.vercel.app",
+  url: "https://www.atriasolutionsparis.com",
   locale: "fr_FR",
   contact: {
     phone: "07 49 42 23 52",
