@@ -35,6 +35,9 @@ export function OrganizationSchema() {
         },
         areaServed: [
           { "@type": "City", name: "Paris" },
+          { "@type": "AdministrativeArea", name: "Hauts-de-Seine" },
+          { "@type": "AdministrativeArea", name: "Seine-Saint-Denis" },
+          { "@type": "AdministrativeArea", name: "Val-de-Marne" },
         ],
         geo: {
           "@type": "GeoCoordinates",

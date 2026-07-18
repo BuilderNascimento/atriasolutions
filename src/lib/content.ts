@@ -316,7 +316,7 @@ export const faqItems: FaqItem[] = [
   {
     question: "Dans quelles zones intervenez-vous ?",
     answer:
-      "Nous intervenons exclusivement à Paris (tous les arrondissements). Contactez-nous pour confirmer la disponibilité sur votre adresse.",
+      "Nous intervenons à Paris (tous les arrondissements) et dans les communes limitrophes de la proche couronne — Hauts-de-Seine, Seine-Saint-Denis et Val-de-Marne. Contactez-nous pour confirmer la disponibilité sur votre adresse.",
   },
   {
     question: "Comment obtenir un devis ?",
@@ -396,12 +396,12 @@ export type ServiceAreaZone = {
   code: string;
 };
 
-/** Zone d'intervention : Paris uniquement */
+/** Zone d'intervention : Paris + proches environs (petite couronne) */
 export const serviceAreas: ServiceAreaZone[] = [
-  { name: "Paris Centre", code: "1er–4e" },
-  { name: "Paris Est", code: "11e–12e·20e" },
-  { name: "Paris Ouest", code: "7e–8e·16e–17e" },
-  { name: "Paris Nord", code: "9e–10e·18e–19e" },
-  { name: "Paris Sud", code: "5e–6e·13e–15e" },
-  { name: "Tous arrondissements", code: "75001–75020" },
+  { name: "Paris", code: "75001–75020" },
+  { name: "Boulogne · Neuilly · Levallois", code: "92" },
+  { name: "Issy · Vanves · Montrouge", code: "92" },
+  { name: "Vincennes · Saint-Mandé · Ivry", code: "94" },
+  { name: "Montreuil · Pantin · Les Lilas", code: "93" },
+  { name: "Saint-Denis · Aubervilliers", code: "93" },
 ];

@@ -9,7 +9,7 @@ export const siteConfig = {
   legalName: "Atria Solutions SAS",
   tagline: "Nettoyage professionnel à Paris",
   description:
-    "Atria Solutions — entreprise de nettoyage professionnel à Paris. Appartements, maisons, bureaux, Airbnb et fins de chantier. Une équipe soignée, réactive et assurée.",
+    "Atria Solutions — entreprise de nettoyage professionnel à Paris et proche couronne. Appartements, maisons, bureaux, Airbnb et fins de chantier. Une équipe soignée, réactive et assurée.",
   url: "https://www.atriasolutionsparis.com",
   locale: "fr_FR",
   contact: {

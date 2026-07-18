@@ -143,13 +143,13 @@ export function ContactForm({ compact = false }: { compact?: boolean }) {
           </div>
           <div>
             <label htmlFor="address" className={labelClass}>
-              Adresse à Paris
+              Adresse
             </label>
             <input
               id="address"
               name="address"
               autoComplete="street-address"
-              placeholder="Arrondissement ou adresse"
+              placeholder="Paris ou proche couronne"
               className={inputClass}
             />
           </div>

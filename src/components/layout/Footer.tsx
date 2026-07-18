@@ -54,7 +54,7 @@ export function Footer() {
               </span>
             </span>
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-secondary/75">
-              Nettoyage professionnel à Paris. Appartements, bureaux, Airbnb et
+              Nettoyage professionnel à Paris et proche couronne. Appartements, bureaux, Airbnb et
               fins de chantier — une équipe soignée et réactive.
             </p>
             <div className="mt-6 flex gap-3">

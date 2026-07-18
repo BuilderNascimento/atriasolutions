@@ -16,14 +16,14 @@ export function ServiceArea() {
             <SectionHeading
               align="left"
               eyebrow="Zone d'intervention"
-              title="Paris, et rien que Paris"
-              description="Nous intervenons dans tous les arrondissements de Paris. Proches de vous, réactifs, et concentrés sur la qualité."
+              title="Paris et ses proches environs"
+              description="Tous les arrondissements de Paris, et les communes limitrophes juste autour — la proche couronne, pas plus loin. Réactifs, proches de vous."
             />
 
             <div className="mt-8 flex flex-wrap gap-2.5">
               {serviceAreas.map((zone, i) => (
                 <motion.span
-                  key={zone.code}
+                  key={`${zone.name}-${zone.code}`}
                   initial={{ opacity: 0, scale: 0.9 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
@@ -53,8 +53,8 @@ export function ServiceArea() {
           >
             <div className="aspect-[4/3] w-full">
               <iframe
-                title="Zone d'intervention Atria Solutions — Paris"
-                src="https://www.openstreetmap.org/export/embed.html?bbox=2.24%2C48.81%2C2.45%2C48.91&layer=mapnik&marker=48.8566%2C2.3522"
+                title="Zone d'intervention Atria Solutions — Paris et proche couronne"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=2.20%2C48.79%2C2.48%2C48.94&layer=mapnik&marker=48.8566%2C2.3522"
                 className="h-full w-full grayscale-[35%] contrast-[1.05]"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
