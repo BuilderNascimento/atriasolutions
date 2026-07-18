@@ -14,11 +14,10 @@ export const siteConfig = {
   url: "https://atriasolutions.vercel.app",
   locale: "fr_FR",
   contact: {
-    // Coordonnées de démonstration — à remplacer par vos informations réelles
-    phone: "+33 1 84 80 00 00",
-    phoneHref: "tel:+33184800000",
-    whatsapp: "+33 6 00 00 00 00",
-    whatsappHref: "https://wa.me/33600000000",
+    phone: "07 49 42 23 52",
+    phoneHref: "tel:+33749422352",
+    whatsapp: "07 49 42 23 52",
+    whatsappHref: "https://wa.me/33749422352",
     email: "contact@atria-solutions.fr",
     emailHref: "mailto:contact@atria-solutions.fr",
     address: "12 Rue de la Paix",
