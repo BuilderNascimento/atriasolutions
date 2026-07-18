@@ -110,7 +110,8 @@ export function PartnersTrust() {
             </h2>
             <p className="mt-3 text-sm leading-relaxed text-muted sm:text-base">
               Plateformes, agences et professionnels de l&apos;immobilier
-              s&apos;appuient sur Atria pour le ménage de leurs logements à Paris.
+              s&apos;appuient sur Atria pour le ménage et la gestion de leurs
+              logements à Paris.
             </p>
           </div>
         </Reveal>
