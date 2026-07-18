@@ -29,134 +29,119 @@ type TurnoverCard = {
   title: string;
   intro: string;
   bullets: string[];
-  outro: string;
 };
 
 const cards: TurnoverCard[] = [
   {
     icon: ClipboardCheck,
     image: TURNOVER_VERIFICATION_IMAGE,
-    title: "Vérification du logement après le départ des voyageurs",
-    intro:
-      "Après chaque séjour, notre équipe intervient dans le logement et commence par effectuer une vérification attentive de son état général :",
+    title: "Vérification après départ",
+    intro: "Contrôle attentif de l'état du logement avant le prochain séjour.",
     bullets: [
-      "Vérification que les clés sont bien présentes",
-      "Contrôle de l'état du logement et des équipements",
-      "Signalement immédiat d'éventuelles anomalies ou dégradations",
+      "Clés et équipements vérifiés",
+      "Anomalies signalées immédiatement",
+      "Logement prêt pour l'arrivée suivante",
     ],
-    outro:
-      "Ces étapes permettent de s'assurer que votre logement est en bon état pour accueillir les prochains voyageurs dans de bonnes conditions.",
   },
   {
     icon: BedDouble,
     image: TURNOVER_MENAGE_IMAGE,
-    title: "Ménage professionnel entre chaque séjour",
-    intro:
-      "Après la vérification du logement, notre équipe réalise un ménage complet et standardisé :",
+    title: "Ménage entre chaque séjour",
+    intro: "Nettoyage complet aux standards Airbnb et Booking.",
     bullets: [
-      "Nettoyage des pièces de vie et chambres",
-      "Entretien de la cuisine et de la salle de bain",
+      "Pièces de vie, cuisine et salle de bain",
       "Remise en ordre du logement",
-      "Préparation du linge (draps, serviettes, torchons) et consommables",
+      "Linge et consommables préparés",
     ],
-    outro:
-      "Ce ménage entre chaque séjour permet de garantir un niveau de propreté conforme aux standards des plateformes de location courte durée comme Airbnb ou Booking.",
   },
   {
     icon: SprayCan,
     image: TURNOVER_PROFONDEUR_IMAGE,
-    title: "Nettoyage approfondi sur demande du propriétaire",
-    intro:
-      "En complément du ménage standard, nous pouvons organiser ponctuellement un « deep cleaning » afin d'approfondir certains éléments du logement :",
+    title: "Nettoyage approfondi",
+    intro: "Deep cleaning ponctuel sur demande du propriétaire.",
     bullets: [
-      "Nettoyage plus poussé des équipements",
-      "Entretien des zones moins accessibles",
-      "Demandes particulières du propriétaire",
+      "Équipements et zones peu accessibles",
+      "Demandes particulières prises en charge",
+      "Programmable selon vos besoins",
     ],
-    outro:
-      "Cette prestation peut être programmée de manière ponctuelle ou régulière, selon vos besoins.",
   },
   {
     icon: ShieldCheck,
     image: TURNOVER_DEGRADATIONS_IMAGE,
-    title: "Gestion des dégradations et démarches auprès des plateformes",
-    intro:
-      "En cas de dégradation constatée après un séjour, nous prenons en charge l'ensemble des démarches administratives :",
+    title: "Suivi des dégradations",
+    intro: "Dossier et démarches auprès des plateformes, sans stress.",
     bullets: [
-      "Analyse des dégâts et constitution du dossier",
-      "Transmission des photos et justificatifs",
-      "Demande de prise en charge auprès de la plateforme concernée (ex : AirCover sur Airbnb)",
+      "Photos et justificatifs transmis",
+      "Demande de prise en charge (ex. AirCover)",
+      "Vous êtes accompagné à chaque étape",
     ],
-    outro:
-      "Notre objectif est de vous simplifier la vie et de défendre vos intérêts, tout en limitant les démarches de votre côté.",
   },
 ];
 
 function TurnoverCardItem({
   card,
-  defaultOpen,
+  open,
+  onToggle,
 }: {
   card: TurnoverCard;
-  defaultOpen: boolean;
+  open: boolean;
+  onToggle: () => void;
 }) {
-  const [open, setOpen] = useState(defaultOpen);
   const Icon = card.icon;
 
   return (
     <motion.article
       variants={staggerItem}
-      className="group flex h-full flex-col overflow-hidden rounded-2xl border border-secondary/70 bg-white shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-card"
+      className="group flex flex-col overflow-hidden rounded-xl border border-secondary/70 bg-white shadow-soft transition-shadow duration-300 hover:shadow-card"
     >
-      <div className="relative aspect-[4/3] overflow-hidden">
+      <div className="relative aspect-[16/10] overflow-hidden">
         <Image
           src={card.image}
           alt={`${card.title} — Atria Solutions Paris`}
           fill
           loading="lazy"
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-          className="object-cover transition-transform duration-700 group-hover:scale-105"
+          className="object-cover transition-transform duration-500 group-hover:scale-105"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent" />
-        <span className="absolute -bottom-5 left-5 flex h-11 w-11 items-center justify-center rounded-full bg-white text-accent shadow-soft ring-1 ring-secondary/60">
-          <Icon className="h-5 w-5" strokeWidth={1.6} />
+        <span className="absolute left-3 top-3 flex h-9 w-9 items-center justify-center rounded-full bg-white/95 text-accent shadow-soft">
+          <Icon className="h-4 w-4" strokeWidth={1.75} />
         </span>
       </div>
 
-      <div className="flex flex-1 flex-col p-6 pt-8">
-        <h3 className="font-heading text-base font-bold leading-snug text-primary">
+      <div className="flex flex-col p-4 sm:p-5">
+        <h3 className="font-heading text-[0.95rem] font-bold leading-snug text-primary">
           {card.title}
         </h3>
-        <p className="mt-3 text-sm leading-relaxed text-muted">{card.intro}</p>
+        <p className="mt-2 text-sm leading-relaxed text-muted line-clamp-2">
+          {card.intro}
+        </p>
 
         <AnimatePresence initial={false}>
           {open && (
-            <motion.div
+            <motion.ul
               initial={{ height: 0, opacity: 0 }}
               animate={{ height: "auto", opacity: 1 }}
               exit={{ height: 0, opacity: 0 }}
-              transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-              className="overflow-hidden"
+              transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+              className="mt-3 space-y-2 overflow-hidden"
             >
-              <ul className="mt-4 space-y-2.5">
-                {card.bullets.map((b) => (
-                  <li key={b} className="flex items-start gap-2.5 text-sm text-ink">
-                    <span className="mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-accent/10 text-accent">
-                      <Check className="h-2.5 w-2.5" strokeWidth={3} />
-                    </span>
-                    {b}
-                  </li>
-                ))}
-              </ul>
-              <p className="mt-4 text-sm leading-relaxed text-muted">{card.outro}</p>
-            </motion.div>
+              {card.bullets.map((b) => (
+                <li key={b} className="flex items-start gap-2 text-sm text-ink">
+                  <span className="mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-accent/10 text-accent">
+                    <Check className="h-2.5 w-2.5" strokeWidth={3} />
+                  </span>
+                  {b}
+                </li>
+              ))}
+            </motion.ul>
           )}
         </AnimatePresence>
 
         <button
           type="button"
-          onClick={() => setOpen((v) => !v)}
+          onClick={onToggle}
           aria-expanded={open}
-          className="mt-4 inline-flex min-h-11 items-center gap-1.5 self-start border-b border-accent/40 pb-0.5 text-sm font-semibold text-accent transition-colors hover:border-accent"
+          className="mt-3 inline-flex min-h-10 items-center gap-1 self-start text-sm font-semibold text-accent transition-colors hover:text-accent-600"
         >
           {open ? "Réduire" : "Voir le détail"}
           <ChevronDown
@@ -172,29 +157,32 @@ function TurnoverCardItem({
 }
 
 export function AirbnbTurnover() {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
   return (
-    <section id="airbnb" className="relative bg-white py-24 lg:py-32">
+    <section id="airbnb" className="relative bg-white py-20 lg:py-28">
       <div className="container-x">
         <SectionHeading
           eyebrow="Location courte durée"
           title="Nous préparons vos logements entre chaque séjour"
-          description="Vérification, ménage aux standards des plateformes, remise en état et suivi des dégradations — pour que chaque arrivée soit impeccable."
+          description="Vérification, ménage aux standards des plateformes et suivi — pour que chaque arrivée soit impeccable."
         />
 
         <Stagger
-          stagger={0.1}
-          className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4"
+          stagger={0.08}
+          className="mt-12 grid items-start gap-5 sm:grid-cols-2 lg:grid-cols-4"
         >
           {cards.map((card, i) => (
             <TurnoverCardItem
               key={card.title}
               card={card}
-              defaultOpen={i === 0}
+              open={openIndex === i}
+              onToggle={() => setOpenIndex((prev) => (prev === i ? null : i))}
             />
           ))}
         </Stagger>
 
-        <div className="mt-14 flex justify-center">
+        <div className="mt-12 flex justify-center">
           <ButtonLink href="/devis" variant="accent">
             {siteConfig.brand.ctaPrimary}
           </ButtonLink>
