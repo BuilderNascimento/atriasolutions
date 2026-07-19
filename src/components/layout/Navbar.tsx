@@ -24,6 +24,7 @@ export function Navbar() {
 
   useEffect(() => {
     setOpen(false);
+    setScrolled(window.scrollY > 24);
   }, [pathname]);
 
   useEffect(() => {
@@ -33,8 +34,9 @@ export function Navbar() {
     };
   }, [open]);
 
-  const onHome = pathname === "/";
-  const transparent = onHome && !scrolled;
+  // Accueil (hero) + pages internes (PageHeader sombre) :
+  // texte clair tant qu'on n'a pas scrollé, puis glass + texte foncé.
+  const light = !scrolled;
 
   return (
     <header
@@ -50,7 +52,7 @@ export function Navbar() {
           aria-label={`${siteConfig.name}, accueil`}
           className="relative z-10"
         >
-          <Logo dark={!transparent} />
+          <Logo dark={!light} />
         </Link>
 
         <ul className="hidden items-center gap-1 lg:flex">
@@ -64,7 +66,7 @@ export function Navbar() {
                 <Link
                   href={item.href}
                   className={`relative rounded-full px-4 py-2 text-sm font-medium transition-colors ${
-                    transparent
+                    light
                       ? "text-white/85 hover:text-white"
                       : "text-primary/80 hover:text-primary"
                   }`}
@@ -74,7 +76,7 @@ export function Navbar() {
                     <motion.span
                       layoutId="nav-active"
                       className={`absolute inset-x-3 -bottom-0.5 h-0.5 rounded-full ${
-                        transparent ? "bg-accent-400" : "bg-accent"
+                        light ? "bg-accent-400" : "bg-accent"
                       }`}
                     />
                   )}
@@ -88,7 +90,7 @@ export function Navbar() {
           <a
             href={siteConfig.contact.phoneHref}
             className={`inline-flex items-center gap-2 text-sm font-medium transition-colors ${
-              transparent
+              light
                 ? "text-white/85 hover:text-white"
                 : "text-primary/80 hover:text-primary"
             }`}
@@ -106,7 +108,7 @@ export function Navbar() {
           aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
           onClick={() => setOpen((v) => !v)}
           className={`relative z-10 inline-flex h-11 w-11 items-center justify-center rounded-full transition-colors lg:hidden ${
-            transparent && !open
+            light && !open
               ? "text-white hover:bg-white/10"
               : "text-primary hover:bg-secondary-100"
           }`}
@@ -123,7 +125,7 @@ export function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.25 }}
-            className="fixed inset-0 top-0 z-0 bg-white lg:hidden"
+            className="fixed inset-0 z-40 bg-white lg:hidden"
           >
             <div className="container-x flex h-full flex-col pt-28 pb-10">
               <ul className="flex flex-col gap-1">
