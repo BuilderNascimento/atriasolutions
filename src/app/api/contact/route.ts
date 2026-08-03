@@ -38,11 +38,18 @@ export async function POST(request: Request) {
       );
     }
 
-    const to = process.env.CONTACT_TO_EMAIL ?? siteConfig.contact.email;
-    // Tant que le domaine n'est pas vérifié sur Resend, onboarding@resend.dev est obligatoire.
+    const to = (
+      process.env.CONTACT_TO_EMAIL ?? siteConfig.contact.email
+    ).trim();
+
+    // Domaine vérifié : envoyer depuis contact@atriasolutionsparis.com
+    // Ne pas utiliser onboarding@resend.dev si le destinataire est le domaine pro.
+    const configuredFrom = process.env.CONTACT_FROM_EMAIL?.trim();
+    const defaultFrom = `Atria Solutions <${siteConfig.contact.email}>`;
     const from =
-      process.env.CONTACT_FROM_EMAIL?.trim() ||
-      "Atria Solutions <onboarding@resend.dev>";
+      configuredFrom && !configuredFrom.includes("onboarding@resend.dev")
+        ? configuredFrom
+        : defaultFrom;
 
     const resend = new Resend(apiKey);
 
@@ -74,7 +81,7 @@ export async function POST(request: Request) {
       </div>
     `;
 
-    const { error } = await resend.emails.send({
+    const { data, error } = await resend.emails.send({
       from,
       to: [to],
       replyTo: email,
@@ -84,26 +91,18 @@ export async function POST(request: Request) {
     });
 
     if (error) {
-      console.error("[contact] Resend error:", error);
-      const detail = `${error.name ?? ""} ${error.message ?? ""}`.toLowerCase();
-      const isDomainIssue =
-        detail.includes("domain") ||
-        detail.includes("verify") ||
-        detail.includes("testing") ||
-        detail.includes("own email");
-
+      console.error("[contact] Resend error:", { from, to, error });
       return NextResponse.json(
         {
           ok: false,
-          error: isDomainIssue
-            ? "Configuration Resend incomplete (domaine / destinataire)."
-            : "Envoi de l'e-mail impossible.",
+          error: "Envoi de l'e-mail impossible.",
           detail: error.message,
         },
         { status: 502 }
       );
     }
 
+    console.info("[contact] email sent:", data?.id, { from, to });
     return NextResponse.json({ ok: true });
   } catch (err) {
     console.error("[contact] unexpected error:", err);

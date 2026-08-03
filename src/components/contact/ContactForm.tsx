@@ -48,11 +48,13 @@ export function ContactForm({ compact = false }: { compact?: boolean }) {
       const payload = (await res.json().catch(() => null)) as {
         ok?: boolean;
         error?: string;
+        detail?: string;
       } | null;
 
       if (!res.ok || !payload?.ok) {
         setErrorMessage(
-          payload?.error ||
+          payload?.detail ||
+            payload?.error ||
             "Une erreur est survenue. Merci de réessayer ou de nous appeler."
         );
         setStatus("error");
