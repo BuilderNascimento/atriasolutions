@@ -4,28 +4,10 @@ import { MapPin, Mail, Phone } from "lucide-react";
 import { siteConfig } from "@/lib/site";
 import { navItems, services } from "@/lib/content";
 
-function Instagram(props: SVGProps<SVGSVGElement>) {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.75} strokeLinecap="round" strokeLinejoin="round" {...props}>
-      <rect x="2" y="2" width="20" height="20" rx="5" />
-      <circle cx="12" cy="12" r="4" />
-      <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" />
-    </svg>
-  );
-}
-
 function Linkedin(props: SVGProps<SVGSVGElement>) {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
       <path d="M6.94 5a1.94 1.94 0 1 1-3.88 0 1.94 1.94 0 0 1 3.88 0ZM3.4 8.4h3.1V21H3.4V8.4Zm5.06 0h2.97v1.72h.04c.41-.78 1.42-1.6 2.93-1.6 3.13 0 3.71 2.06 3.71 4.74V21h-3.09v-5.66c0-1.35-.02-3.08-1.88-3.08-1.88 0-2.17 1.47-2.17 2.98V21H8.46V8.4Z" />
-    </svg>
-  );
-}
-
-function Facebook(props: SVGProps<SVGSVGElement>) {
-  return (
-    <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
-      <path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.25-1.5 1.53-1.5H17V3.6c-.28-.04-1.25-.12-2.38-.12-2.36 0-3.97 1.44-3.97 4.08v2.28H8v3.1h2.65V21h2.85Z" />
     </svg>
   );
 }
@@ -58,22 +40,15 @@ export function Footer() {
               bureaux, Airbnb et fins de chantier. Une équipe soignée et réactive.
             </p>
             <div className="mt-6 flex gap-3">
-              {[
-                { icon: Instagram, href: siteConfig.social.instagram, label: "Instagram" },
-                { icon: Linkedin, href: siteConfig.social.linkedin, label: "LinkedIn" },
-                { icon: Facebook, href: siteConfig.social.facebook, label: "Facebook" },
-              ].map(({ icon: Icon, href, label }) => (
-                <a
-                  key={label}
-                  href={href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={label}
-                  className="flex h-10 w-10 items-center justify-center rounded-full ring-1 ring-white/15 transition-colors hover:bg-white/10 hover:text-white"
-                >
-                  <Icon className="h-4.5 w-4.5" strokeWidth={1.75} />
-                </a>
-              ))}
+              <a
+                href={siteConfig.social.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="flex h-10 w-10 items-center justify-center rounded-full ring-1 ring-white/15 transition-colors hover:bg-white/10 hover:text-white"
+              >
+                <Linkedin className="h-4.5 w-4.5" />
+              </a>
             </div>
           </div>
 

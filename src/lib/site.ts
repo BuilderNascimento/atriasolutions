@@ -24,9 +24,7 @@ export const siteConfig = {
     hours: "Lun-Sam, 8h-20h",
   },
   social: {
-    instagram: "https://instagram.com",
-    linkedin: "https://linkedin.com",
-    facebook: "https://facebook.com",
+    linkedin: "https://www.linkedin.com/company/atria-solutions-paris",
   },
   stats: {
     years: 5,

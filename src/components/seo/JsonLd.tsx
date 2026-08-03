@@ -57,11 +57,7 @@ export function OrganizationSchema() {
           opens: "08:00",
           closes: "20:00",
         },
-        sameAs: [
-          siteConfig.social.instagram,
-          siteConfig.social.linkedin,
-          siteConfig.social.facebook,
-        ],
+        sameAs: [siteConfig.social.linkedin],
         makesOffer: services.map((s) => ({
           "@type": "Offer",
           itemOffered: {
