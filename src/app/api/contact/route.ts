@@ -39,21 +39,22 @@ export async function POST(request: Request) {
     }
 
     const to = process.env.CONTACT_TO_EMAIL ?? siteConfig.contact.email;
+    // Tant que le domaine n'est pas vérifié sur Resend, onboarding@resend.dev est obligatoire.
     const from =
-      process.env.CONTACT_FROM_EMAIL ??
+      process.env.CONTACT_FROM_EMAIL?.trim() ||
       "Atria Solutions <onboarding@resend.dev>";
 
     const resend = new Resend(apiKey);
 
     const textLines = [
-      "Nouvelle demande de devis — Atria Solutions",
+      "Nouvelle demande de devis - Atria Solutions",
       "",
       `Nom : ${name}`,
       `Téléphone : ${phone}`,
       `E-mail : ${email}`,
-      `Adresse : ${address || "—"}`,
+      `Adresse : ${address || "-"}`,
       `Service : ${service}`,
-      `Date souhaitée : ${preferredDate || "—"}`,
+      `Date souhaitée : ${preferredDate || "-"}`,
       "",
       "Message :",
       message,
@@ -65,9 +66,9 @@ export async function POST(request: Request) {
         <p style="margin:0 0 8px"><strong>Nom :</strong> ${escapeHtml(name)}</p>
         <p style="margin:0 0 8px"><strong>Téléphone :</strong> ${escapeHtml(phone)}</p>
         <p style="margin:0 0 8px"><strong>E-mail :</strong> ${escapeHtml(email)}</p>
-        <p style="margin:0 0 8px"><strong>Adresse :</strong> ${escapeHtml(address || "—")}</p>
+        <p style="margin:0 0 8px"><strong>Adresse :</strong> ${escapeHtml(address || "-")}</p>
         <p style="margin:0 0 8px"><strong>Service :</strong> ${escapeHtml(service)}</p>
-        <p style="margin:0 0 8px"><strong>Date souhaitée :</strong> ${escapeHtml(preferredDate || "—")}</p>
+        <p style="margin:0 0 8px"><strong>Date souhaitée :</strong> ${escapeHtml(preferredDate || "-")}</p>
         <p style="margin:16px 0 8px"><strong>Message :</strong></p>
         <p style="white-space:pre-wrap;margin:0">${escapeHtml(message)}</p>
       </div>
@@ -77,15 +78,28 @@ export async function POST(request: Request) {
       from,
       to: [to],
       replyTo: email,
-      subject: `Devis — ${service} — ${name}`,
+      subject: `Devis - ${service} - ${name}`,
       text: textLines.join("\n"),
       html,
     });
 
     if (error) {
       console.error("[contact] Resend error:", error);
+      const detail = `${error.name ?? ""} ${error.message ?? ""}`.toLowerCase();
+      const isDomainIssue =
+        detail.includes("domain") ||
+        detail.includes("verify") ||
+        detail.includes("testing") ||
+        detail.includes("own email");
+
       return NextResponse.json(
-        { ok: false, error: "Envoi de l'e-mail impossible." },
+        {
+          ok: false,
+          error: isDomainIssue
+            ? "Configuration Resend incomplete (domaine / destinataire)."
+            : "Envoi de l'e-mail impossible.",
+          detail: error.message,
+        },
         { status: 502 }
       );
     }

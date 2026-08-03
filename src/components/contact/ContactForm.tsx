@@ -24,6 +24,9 @@ function RequiredMark() {
 export function ContactForm({ compact = false }: { compact?: boolean }) {
   const [status, setStatus] = useState<Status>("idle");
   const [touched, setTouched] = useState(false);
+  const [errorMessage, setErrorMessage] = useState(
+    "Une erreur est survenue. Merci de réessayer ou de nous appeler."
+  );
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -42,11 +45,27 @@ export function ContactForm({ compact = false }: { compact?: boolean }) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
       });
-      if (!res.ok) throw new Error("Request failed");
+      const payload = (await res.json().catch(() => null)) as {
+        ok?: boolean;
+        error?: string;
+      } | null;
+
+      if (!res.ok || !payload?.ok) {
+        setErrorMessage(
+          payload?.error ||
+            "Une erreur est survenue. Merci de réessayer ou de nous appeler."
+        );
+        setStatus("error");
+        return;
+      }
+
       setStatus("success");
       form.reset();
       setTouched(false);
     } catch {
+      setErrorMessage(
+        "Une erreur est survenue. Merci de réessayer ou de nous appeler."
+      );
       setStatus("error");
     }
   }
@@ -213,7 +232,7 @@ export function ContactForm({ compact = false }: { compact?: boolean }) {
 
         {status === "error" && (
           <p className="rounded-xl bg-red-50 px-4 py-3 text-sm text-red-700" role="alert">
-            Une erreur est survenue. Merci de réessayer ou de nous appeler.
+            {errorMessage}
           </p>
         )}
 
